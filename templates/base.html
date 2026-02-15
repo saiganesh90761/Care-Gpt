@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}HealthApp AI – Patient Triage{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+  {% block head %}{% endblock %}
+</head>
+
+<body>
+  <div class="app">
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-brand">
+          <span class="nav-brand-icon">
+            <span class="material-symbols-outlined" style="font-size:1.25rem">medical_services</span>
+          </span>
+          HealthApp AI
+        </a>
+        <nav class="nav-links" aria-label="Main">
+          <a href="/" class="nav-link {% if request.endpoint == 'index' %}active{% endif %}">Home</a>
+          <a href="/symptoms" class="nav-link {% if request.endpoint == 'symptoms_page' %}active{% endif %}">Symptoms
+            Checker</a>
+          <a href="/chat" class="nav-link nav-link-chat {% if request.endpoint == 'chat_page' %}active{% endif %}">
+            <span class="material-symbols-outlined" style="font-size:1.1rem;vertical-align:middle;">chat</span>
+            Chat with AI
+          </a>
+          {% if current_user and current_user.role == 'patient' %}
+          <a href="/monitor" class="nav-link {% if request.endpoint == 'monitor_self' %}active{% endif %}">
+            <span class="material-symbols-outlined" style="font-size:1.1rem;vertical-align:middle;">ecg_heart</span>
+            Live Vitals
+          </a>
+          {% endif %}
+        </nav>
+        <div class="nav-user">
+          {% if current_user %}
+          <div class="nav-user-info">
+            <p class="nav-user-name">{{ current_user.full_name }}</p>
+            <p class="nav-user-id">{{ current_user.email }}</p>
+          </div>
+          <div class="nav-user-avatar">{{ current_user.full_name[:2].upper() if current_user.full_name else '?' }}</div>
+          <a href="{{ url_for('logout') }}" class="nav-link" style="margin-left:0.5rem;">Logout</a>
+          {% else %}
+          <a href="{{ url_for('login') }}" class="nav-link">Login</a>
+          {% endif %}
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  {% block scripts %}{% endblock %}
+</body>
+
+</html>

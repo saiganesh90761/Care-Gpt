@@ -1,0 +1,1201 @@
+Patient_ID,Age,Gender,Symptoms,Blood_Pressure_Systolic,Heart_Rate,Temperature_F,Pre_Existing_Conditions,Risk_Level,Recommended_Department
+P0001,52,Other,Fever,97,84,98.8,"Asthma, Diabetes",Low,General Medicine
+P0002,24,Male,"Cough, Numbness, Fatigue",140,72,98.6,Thyroid Disorder,Low,Neurology
+P0003,88,Male,Cough,110,88,97.7,Asthma,Low,General Medicine
+P0004,76,Other,"Fever, Fatigue, Shortness of Breath",110,80,97.8,"Asthma, Anemia",Low,Pulmonology
+P0005,42,Other,"Sore Throat, Fever",114,77,96.2,Thyroid Disorder,Low,General Medicine
+P0006,64,Female,"Chest Pain, Shortness of Breath",149,97,98.2,"Diabetes, None",High,Cardiology
+P0007,7,Female,Dizziness,107,94,98.8,"Heart Disease, Thyroid Disorder",Low,General Medicine
+P0008,60,Male,"Abdominal Pain, Fatigue, Cough",107,79,96.8,"Diabetes, Heart Disease",Low,General Medicine
+P0009,47,Female,"Blurred Vision, Dizziness, Sore Throat",112,62,99.2,Diabetes,Low,Neurology
+P0010,6,Male,"Shortness of Breath, Headache, Cough",105,84,96.3,Diabetes,Low,Pulmonology
+P0011,63,Female,"Abdominal Pain, Numbness",116,98,99.4,"Hypertension, Anemia",Low,Neurology
+P0012,48,Female,Numbness,116,91,95.6,"Diabetes, Heart Disease",Low,Neurology
+P0013,62,Other,Fatigue,99,56,99.6,Hypertension,Low,General Medicine
+P0014,26,Female,"Headache, Numbness",109,81,99.0,Kidney Disease,Low,Neurology
+P0015,41,Male,Fever,103,72,98.3,"Thyroid Disorder, Hypertension",Low,General Medicine
+P0016,1,Male,Blurred Vision,114,88,99.7,"Asthma, Kidney Disease",Low,Neurology
+P0017,35,Female,"Numbness, Abdominal Pain",129,99,98.7,Heart Disease,Low,Neurology
+P0018,28,Male,Back Pain,131,84,99.9,"Thyroid Disorder, Heart Disease",Low,General Medicine
+P0019,34,Female,"Shortness of Breath, Chest Pain",115,68,100.2,"Diabetes, Thyroid Disorder",Medium,Cardiology
+P0020,44,Male,Chest Pain,144,92,98.8,Thyroid Disorder,High,Cardiology
+P0021,65,Other,Vomiting,126,78,99.1,"Anemia, Heart Disease",Low,General Medicine
+P0022,14,Female,"Fever, Numbness, Cough",134,130,97.0,"Kidney Disease, None",High,Neurology
+P0023,15,Female,"Chest Pain, Abdominal Pain",116,65,98.6,Heart Disease,Low,Cardiology
+P0024,52,Other,Fatigue,117,106,99.3,Heart Disease,Medium,General Medicine
+P0025,23,Other,"Blurred Vision, Shortness of Breath, Chest Pain",137,114,100.8,"Hypertension, Heart Disease",Medium,Cardiology
+P0026,28,Other,Blurred Vision,136,93,98.9,"Anemia, None",Low,Neurology
+P0027,28,Male,"Sore Throat, Headache",111,59,97.9,None,Low,General Medicine
+P0028,89,Male,"Cough, Sore Throat, Abdominal Pain",135,69,97.9,Hypertension,Low,General Medicine
+P0029,27,Male,"Abdominal Pain, Fatigue, Chest Pain",145,75,95.0,"Thyroid Disorder, Diabetes",High,Cardiology
+P0030,37,Other,"Back Pain, Shortness of Breath, Headache",126,63,99.8,"Kidney Disease, Asthma",Low,Pulmonology
+P0031,24,Other,"Cough, Shortness of Breath",116,86,101.2,Diabetes,Medium,Pulmonology
+P0032,62,Female,Blurred Vision,123,79,95.9,Asthma,Low,Neurology
+P0033,56,Male,Back Pain,122,73,97.4,Asthma,Low,General Medicine
+P0034,1,Male,Dizziness,120,71,97.8,Asthma,Low,General Medicine
+P0035,44,Female,"Abdominal Pain, Shortness of Breath, Fatigue",159,50,97.3,Anemia,High,Pulmonology
+P0036,56,Male,"Sore Throat, Vomiting",123,91,97.0,Diabetes,Low,General Medicine
+P0037,24,Male,"Vomiting, Dizziness, Sore Throat",127,79,100.2,"Anemia, Thyroid Disorder",Medium,General Medicine
+P0038,16,Other,Numbness,112,72,99.8,None,Low,Neurology
+P0039,70,Female,"Dizziness, Cough, Shortness of Breath",135,86,96.8,Asthma,Low,Pulmonology
+P0040,67,Other,"Chest Pain, Vomiting",106,71,100.0,Heart Disease,Low,Cardiology
+P0041,71,Female,Cough,130,66,99.3,"Diabetes, None",Low,General Medicine
+P0042,1,Other,"Fever, Cough, Shortness of Breath",116,97,99.7,Thyroid Disorder,Low,Pulmonology
+P0043,50,Female,"Shortness of Breath, Vomiting",136,61,98.7,Hypertension,Low,Pulmonology
+P0044,60,Female,Vomiting,146,80,99.2,"Anemia, Hypertension",Medium,General Medicine
+P0045,32,Female,"Back Pain, Fatigue, Numbness",91,97,100.3,"Hypertension, Diabetes",Medium,Neurology
+P0046,3,Female,Fever,102,75,100.0,Kidney Disease,Low,General Medicine
+P0047,33,Male,Blurred Vision,106,83,98.8,"Hypertension, None",Low,Neurology
+P0048,18,Other,Chest Pain,105,82,96.6,Diabetes,Low,Cardiology
+P0049,54,Other,Vomiting,123,79,96.4,Asthma,Low,General Medicine
+P0050,8,Other,"Fever, Blurred Vision, Cough",119,86,99.8,"Kidney Disease, Hypertension",Low,Neurology
+P0051,33,Male,"Back Pain, Dizziness, Shortness of Breath",132,125,96.4,"Thyroid Disorder, Diabetes",High,Pulmonology
+P0052,30,Other,"Headache, Abdominal Pain, Dizziness",134,78,98.9,None,Low,General Medicine
+P0053,54,Female,"Blurred Vision, Cough, Back Pain",117,93,100.4,Heart Disease,Medium,Neurology
+P0054,64,Male,"Cough, Shortness of Breath",93,74,99.2,"Heart Disease, Diabetes",Low,Pulmonology
+P0055,48,Female,"Back Pain, Headache, Blurred Vision",98,87,98.1,Heart Disease,Low,Neurology
+P0056,37,Other,Chest Pain,134,78,99.5,"Diabetes, None",Low,Cardiology
+P0057,53,Other,"Chest Pain, Headache, Back Pain",126,80,98.1,Kidney Disease,Low,Cardiology
+P0058,32,Male,"Numbness, Headache, Fatigue",110,73,99.7,"Heart Disease, Thyroid Disorder",Low,Neurology
+P0059,18,Male,Numbness,134,81,99.3,"Heart Disease, None",Low,Neurology
+P0060,24,Male,"Sore Throat, Chest Pain",155,89,96.8,"Hypertension, Kidney Disease",High,Cardiology
+P0061,23,Female,"Back Pain, Vomiting, Fatigue",121,62,98.9,Diabetes,Low,General Medicine
+P0062,33,Male,"Chest Pain, Fatigue, Fever",131,86,97.3,"Hypertension, Asthma",Low,Cardiology
+P0063,39,Male,Headache,138,70,98.9,"None, Hypertension",Low,General Medicine
+P0064,13,Male,"Shortness of Breath, Numbness, Cough",125,62,99.1,"Thyroid Disorder, Heart Disease",Low,Neurology
+P0065,8,Other,Shortness of Breath,139,89,97.9,Hypertension,Low,Pulmonology
+P0066,66,Female,Chest Pain,135,108,97.4,"Thyroid Disorder, Anemia",Medium,Cardiology
+P0067,51,Other,"Sore Throat, Shortness of Breath, Headache",166,51,99.4,Diabetes,High,Pulmonology
+P0068,86,Female,Abdominal Pain,87,85,95.6,Asthma,Low,General Medicine
+P0069,8,Female,"Headache, Shortness of Breath",105,90,97.3,None,Low,Pulmonology
+P0070,47,Other,Vomiting,124,68,99.0,"Heart Disease, Thyroid Disorder",Low,General Medicine
+P0071,16,Male,"Dizziness, Numbness",120,86,100.0,"Kidney Disease, None",Low,Neurology
+P0072,63,Male,"Chest Pain, Blurred Vision",107,103,97.7,"None, Anemia",Medium,Cardiology
+P0073,62,Other,"Dizziness, Back Pain",130,92,96.6,"Thyroid Disorder, Heart Disease",Low,General Medicine
+P0074,1,Other,Vomiting,113,56,97.9,Heart Disease,Low,General Medicine
+P0075,48,Male,"Vomiting, Fever, Fatigue",125,113,97.2,Kidney Disease,Medium,General Medicine
+P0076,67,Female,Numbness,158,69,96.5,"Kidney Disease, Anemia",Medium,Neurology
+P0077,86,Male,"Headache, Fatigue, Sore Throat",128,91,97.0,"Kidney Disease, Asthma",Low,General Medicine
+P0078,48,Other,"Fatigue, Chest Pain",118,71,100.0,Thyroid Disorder,Low,Cardiology
+P0079,23,Other,"Numbness, Back Pain",113,87,103.2,Heart Disease,High,Neurology
+P0080,4,Female,"Fever, Headache, Back Pain",121,88,98.6,Thyroid Disorder,Low,General Medicine
+P0081,2,Other,"Numbness, Dizziness, Abdominal Pain",121,74,98.6,"Anemia, Kidney Disease",Low,Neurology
+P0082,50,Male,"Abdominal Pain, Back Pain, Chest Pain",133,64,98.7,Heart Disease,Low,Cardiology
+P0083,61,Other,"Numbness, Blurred Vision, Dizziness",133,81,99.1,Asthma,Low,Neurology
+P0084,74,Other,"Shortness of Breath, Sore Throat",117,69,97.1,None,Low,Pulmonology
+P0085,12,Male,Abdominal Pain,125,70,98.1,Anemia,Low,General Medicine
+P0086,26,Female,"Blurred Vision, Shortness of Breath, Vomiting",110,63,100.3,"Thyroid Disorder, Diabetes",Medium,Neurology
+P0087,7,Male,"Back Pain, Fever, Cough",127,69,99.7,"Asthma, Diabetes",Low,General Medicine
+P0088,36,Other,"Abdominal Pain, Fever, Fatigue",126,86,98.3,Diabetes,Low,General Medicine
+P0089,36,Female,Sore Throat,131,69,95.7,"Kidney Disease, Thyroid Disorder",Low,General Medicine
+P0090,24,Female,"Back Pain, Fatigue, Vomiting",95,82,100.0,"Hypertension, Kidney Disease",Low,General Medicine
+P0091,12,Female,"Headache, Shortness of Breath",151,73,97.8,"Anemia, Kidney Disease",High,Pulmonology
+P0092,17,Male,"Abdominal Pain, Cough",125,75,103.3,"Asthma, Hypertension",High,Emergency
+P0093,89,Female,"Fatigue, Cough",133,75,98.9,Hypertension,Low,General Medicine
+P0094,52,Male,"Back Pain, Chest Pain",117,108,100.0,Diabetes,Medium,Cardiology
+P0095,69,Female,"Dizziness, Fatigue",99,61,100.1,"Thyroid Disorder, None",Medium,General Medicine
+P0096,23,Male,"Vomiting, Blurred Vision",135,74,98.8,Thyroid Disorder,Low,Neurology
+P0097,53,Female,Dizziness,106,79,95.3,"Thyroid Disorder, Anemia",Low,General Medicine
+P0098,87,Female,"Back Pain, Sore Throat, Fatigue",155,107,99.0,Anemia,Medium,General Medicine
+P0099,76,Male,"Vomiting, Abdominal Pain",137,87,98.5,Thyroid Disorder,Low,General Medicine
+P0100,46,Female,"Numbness, Vomiting, Chest Pain",121,73,98.7,"Hypertension, Heart Disease",Low,Cardiology
+P0101,50,Other,Vomiting,88,81,100.0,Diabetes,Low,General Medicine
+P0102,86,Other,"Chest Pain, Abdominal Pain",124,69,98.1,None,Low,Cardiology
+P0103,61,Female,"Dizziness, Shortness of Breath",149,66,97.2,"Kidney Disease, Hypertension",High,Pulmonology
+P0104,67,Female,"Sore Throat, Vomiting",96,71,96.2,"Diabetes, Asthma",Low,General Medicine
+P0105,58,Male,"Fatigue, Fever, Dizziness",137,91,99.2,Diabetes,Low,General Medicine
+P0106,3,Other,Sore Throat,134,87,98.5,Asthma,Low,General Medicine
+P0107,63,Male,Blurred Vision,103,79,95.0,Asthma,Low,Neurology
+P0108,58,Male,"Numbness, Cough",142,83,98.4,Anemia,Medium,Neurology
+P0109,36,Other,"Sore Throat, Dizziness",129,80,101.8,Diabetes,Medium,General Medicine
+P0110,14,Male,"Cough, Blurred Vision",128,66,100.7,Heart Disease,Medium,Neurology
+P0111,87,Other,"Vomiting, Sore Throat, Shortness of Breath",163,67,97.1,Asthma,High,Pulmonology
+P0112,8,Male,"Sore Throat, Headache, Numbness",108,95,95.7,None,Low,Neurology
+P0113,41,Female,"Vomiting, Numbness, Dizziness",113,55,101.0,Kidney Disease,Medium,Neurology
+P0114,29,Male,"Abdominal Pain, Cough",90,78,99.4,"Kidney Disease, Anemia",Low,General Medicine
+P0115,69,Female,"Chest Pain, Vomiting, Sore Throat",93,107,100.2,"Anemia, Asthma",Medium,Cardiology
+P0116,49,Female,"Blurred Vision, Headache, Dizziness",110,100,97.4,Diabetes,Low,Neurology
+P0117,89,Female,"Shortness of Breath, Abdominal Pain",117,98,96.0,"Kidney Disease, None",Low,Pulmonology
+P0118,55,Female,"Chest Pain, Abdominal Pain",108,83,98.9,Kidney Disease,Low,Cardiology
+P0119,5,Female,"Headache, Blurred Vision",120,80,97.7,"None, Heart Disease",Low,Neurology
+P0120,78,Male,Shortness of Breath,132,70,97.2,"Anemia, Heart Disease",Low,Pulmonology
+P0121,45,Male,"Abdominal Pain, Numbness, Sore Throat",92,88,100.0,"None, Anemia",Low,Neurology
+P0122,72,Female,Vomiting,150,79,97.8,Heart Disease,Medium,General Medicine
+P0123,54,Other,"Dizziness, Abdominal Pain, Fatigue",122,103,98.7,"Thyroid Disorder, Kidney Disease",Medium,General Medicine
+P0124,5,Other,"Dizziness, Back Pain",143,71,102.2,"Heart Disease, Hypertension",High,Emergency
+P0125,23,Female,Cough,132,100,97.0,Kidney Disease,Low,General Medicine
+P0126,38,Male,"Fatigue, Back Pain, Chest Pain",133,83,98.5,Asthma,Low,Cardiology
+P0127,50,Other,"Headache, Back Pain",85,101,99.7,"Diabetes, Thyroid Disorder",Medium,General Medicine
+P0128,52,Male,"Shortness of Breath, Dizziness",117,49,101.3,Heart Disease,Medium,Pulmonology
+P0129,79,Male,"Fatigue, Chest Pain, Headache",152,59,95.8,None,High,Cardiology
+P0130,88,Other,"Back Pain, Chest Pain",118,81,97.7,"Diabetes, Thyroid Disorder",Low,Cardiology
+P0131,66,Male,"Headache, Abdominal Pain, Back Pain",142,58,98.2,"Kidney Disease, Diabetes",Medium,General Medicine
+P0132,23,Male,"Abdominal Pain, Cough",118,85,97.0,Thyroid Disorder,Low,General Medicine
+P0133,4,Female,Blurred Vision,134,75,101.5,Hypertension,Medium,Neurology
+P0134,50,Male,"Headache, Cough, Shortness of Breath",113,59,99.2,Thyroid Disorder,Low,Pulmonology
+P0135,21,Other,"Sore Throat, Blurred Vision, Shortness of Breath",109,68,98.2,"Anemia, Asthma",Low,Neurology
+P0136,46,Female,"Vomiting, Headache, Blurred Vision",99,80,95.0,Diabetes,Low,Neurology
+P0137,45,Male,"Shortness of Breath, Headache, Numbness",107,75,101.3,Hypertension,Medium,Neurology
+P0138,56,Male,Fatigue,116,78,98.1,Hypertension,Low,General Medicine
+P0139,1,Male,"Abdominal Pain, Back Pain",123,68,98.4,"Heart Disease, None",Low,General Medicine
+P0140,56,Male,"Back Pain, Headache",126,115,97.9,"Diabetes, Kidney Disease",Medium,General Medicine
+P0141,87,Male,"Sore Throat, Numbness",155,83,99.0,Thyroid Disorder,Medium,Neurology
+P0142,23,Male,"Shortness of Breath, Numbness, Chest Pain",104,126,100.1,"Hypertension, None",High,Cardiology
+P0143,18,Male,Sore Throat,150,45,97.2,"Heart Disease, Asthma",Medium,General Medicine
+P0144,28,Male,"Back Pain, Headache",101,70,96.8,"Heart Disease, Anemia",Low,General Medicine
+P0145,44,Other,"Abdominal Pain, Cough",105,62,95.1,Thyroid Disorder,Low,General Medicine
+P0146,18,Other,"Blurred Vision, Headache",112,81,97.1,Diabetes,Low,Neurology
+P0147,34,Male,"Blurred Vision, Sore Throat, Fever",161,100,95.4,"None, Thyroid Disorder",High,Neurology
+P0148,6,Male,"Fatigue, Numbness",141,83,99.7,"Heart Disease, Diabetes",Medium,Neurology
+P0149,59,Other,"Numbness, Abdominal Pain",92,88,97.4,Anemia,Low,Neurology
+P0150,75,Female,"Dizziness, Sore Throat",110,82,99.8,Hypertension,Low,General Medicine
+P0151,75,Female,"Back Pain, Abdominal Pain",124,84,97.3,"Thyroid Disorder, Anemia",Low,General Medicine
+P0152,51,Other,Abdominal Pain,109,88,99.6,Kidney Disease,Low,General Medicine
+P0153,75,Female,"Cough, Vomiting",86,88,97.4,Anemia,Low,General Medicine
+P0154,68,Female,Shortness of Breath,131,84,95.0,"Anemia, Kidney Disease",Low,Pulmonology
+P0155,12,Female,Shortness of Breath,125,66,99.4,"Hypertension, Anemia",Low,Pulmonology
+P0156,11,Female,"Abdominal Pain, Cough, Fever",86,77,99.1,Hypertension,Low,General Medicine
+P0157,3,Female,"Fever, Fatigue, Vomiting",117,73,97.5,Asthma,Low,General Medicine
+P0158,73,Male,"Cough, Numbness",135,87,100.6,Anemia,Medium,Neurology
+P0159,24,Other,"Fatigue, Back Pain",145,86,97.6,"Thyroid Disorder, Anemia",Medium,General Medicine
+P0160,75,Female,"Shortness of Breath, Abdominal Pain",150,81,98.2,Thyroid Disorder,High,Pulmonology
+P0161,22,Male,"Fatigue, Back Pain, Chest Pain",130,90,99.2,Heart Disease,Low,Cardiology
+P0162,37,Female,"Sore Throat, Fatigue",129,88,100.0,"None, Hypertension",Low,General Medicine
+P0163,26,Other,"Blurred Vision, Sore Throat",114,89,101.0,"Hypertension, Asthma",Medium,Neurology
+P0164,72,Other,"Dizziness, Sore Throat",136,49,96.9,"Anemia, Hypertension",Low,General Medicine
+P0165,51,Male,"Shortness of Breath, Blurred Vision, Vomiting",134,113,101.4,Thyroid Disorder,Medium,Neurology
+P0166,17,Male,"Back Pain, Abdominal Pain",88,76,99.6,"Thyroid Disorder, Kidney Disease",Low,General Medicine
+P0167,78,Other,Abdominal Pain,80,101,100.2,Hypertension,Medium,General Medicine
+P0168,42,Other,"Dizziness, Cough, Abdominal Pain",102,85,97.8,Anemia,Low,General Medicine
+P0169,29,Male,"Chest Pain, Vomiting, Numbness",154,79,99.6,Diabetes,High,Cardiology
+P0170,27,Female,"Dizziness, Blurred Vision",140,102,99.0,"Diabetes, Thyroid Disorder",Medium,Neurology
+P0171,74,Female,"Fatigue, Vomiting, Dizziness",140,72,98.0,"None, Heart Disease",Low,General Medicine
+P0172,29,Male,Numbness,100,64,102.9,"Asthma, Kidney Disease",High,Neurology
+P0173,68,Male,"Cough, Numbness",139,94,100.5,Anemia,Medium,Neurology
+P0174,36,Male,"Headache, Fever, Back Pain",140,90,100.8,"None, Hypertension",Medium,General Medicine
+P0175,20,Female,"Vomiting, Chest Pain",84,102,99.4,Thyroid Disorder,Medium,Cardiology
+P0176,12,Other,"Sore Throat, Chest Pain, Back Pain",118,75,97.7,Diabetes,Low,Cardiology
+P0177,60,Other,"Blurred Vision, Numbness",102,83,97.5,Anemia,Low,Neurology
+P0178,9,Other,Shortness of Breath,146,103,97.6,"Heart Disease, Asthma",High,Pulmonology
+P0179,40,Female,"Fever, Abdominal Pain, Headache",113,72,97.8,Diabetes,Low,General Medicine
+P0180,87,Female,"Blurred Vision, Headache",111,118,99.2,"Heart Disease, Asthma",Medium,Neurology
+P0181,21,Female,Vomiting,147,69,99.3,"Diabetes, Anemia",Medium,General Medicine
+P0182,26,Female,"Dizziness, Blurred Vision, Headache",107,64,95.9,"None, Thyroid Disorder",Low,Neurology
+P0183,25,Other,"Headache, Fever",88,45,98.6,Anemia,Low,General Medicine
+P0184,59,Female,Blurred Vision,135,63,98.2,"Asthma, Kidney Disease",Low,Neurology
+P0185,24,Male,"Headache, Numbness, Back Pain",96,84,97.3,Diabetes,Low,Neurology
+P0186,26,Other,"Fever, Headache, Abdominal Pain",138,75,96.7,Kidney Disease,Low,General Medicine
+P0187,63,Other,Cough,120,82,97.4,"Kidney Disease, Anemia",Low,General Medicine
+P0188,87,Female,Shortness of Breath,122,100,97.9,Kidney Disease,Low,Pulmonology
+P0189,62,Other,"Headache, Chest Pain, Sore Throat",108,71,98.4,"Heart Disease, Kidney Disease",Low,Cardiology
+P0190,40,Female,Abdominal Pain,109,55,99.5,Hypertension,Low,General Medicine
+P0191,47,Male,"Back Pain, Numbness, Vomiting",168,109,97.6,"Diabetes, Thyroid Disorder",High,Neurology
+P0192,51,Female,Headache,80,74,97.8,Anemia,Low,General Medicine
+P0193,29,Female,"Back Pain, Numbness, Headache",122,77,99.2,"Kidney Disease, None",Low,Neurology
+P0194,34,Other,Abdominal Pain,114,74,98.3,Kidney Disease,Low,General Medicine
+P0195,32,Other,Numbness,138,99,99.5,Anemia,Low,Neurology
+P0196,72,Other,"Numbness, Vomiting",97,81,98.2,Hypertension,Low,Neurology
+P0197,67,Male,Headache,122,94,99.7,"Diabetes, None",Low,General Medicine
+P0198,88,Male,"Chest Pain, Vomiting, Abdominal Pain",132,90,99.1,"Thyroid Disorder, Heart Disease",Low,Cardiology
+P0199,16,Other,"Chest Pain, Vomiting, Numbness",152,64,97.4,Anemia,High,Cardiology
+P0200,48,Other,"Headache, Fever",101,83,97.3,"Asthma, Anemia",Low,General Medicine
+P0201,33,Female,Dizziness,126,61,99.8,Kidney Disease,Low,General Medicine
+P0202,47,Other,"Dizziness, Fever, Vomiting",116,57,100.1,"Asthma, None",Medium,General Medicine
+P0203,2,Female,Numbness,113,78,97.7,None,Low,Neurology
+P0204,9,Male,"Shortness of Breath, Chest Pain",140,53,97.6,Diabetes,Low,Cardiology
+P0205,86,Other,Blurred Vision,112,83,98.8,Asthma,Low,Neurology
+P0206,87,Female,Sore Throat,120,74,100.4,Heart Disease,Medium,General Medicine
+P0207,81,Male,Fatigue,126,54,96.4,"Hypertension, None",Low,General Medicine
+P0208,22,Other,Chest Pain,134,60,98.6,Kidney Disease,Low,Cardiology
+P0209,87,Male,"Dizziness, Fever, Chest Pain",139,88,100.4,"None, Diabetes",Medium,Cardiology
+P0210,41,Other,"Fatigue, Cough",122,86,95.8,Anemia,Low,General Medicine
+P0211,25,Female,"Fatigue, Blurred Vision",156,79,97.1,Anemia,Medium,Neurology
+P0212,40,Other,Blurred Vision,101,90,96.4,Heart Disease,Low,Neurology
+P0213,53,Female,"Fever, Sore Throat, Abdominal Pain",83,60,97.5,"Thyroid Disorder, Kidney Disease",Low,General Medicine
+P0214,54,Male,"Back Pain, Abdominal Pain",120,74,98.7,Diabetes,Low,General Medicine
+P0215,36,Female,"Chest Pain, Cough, Sore Throat",115,98,98.7,"Kidney Disease, Asthma",Low,Cardiology
+P0216,54,Other,"Headache, Abdominal Pain, Fatigue",128,111,97.9,"Diabetes, Thyroid Disorder",Medium,General Medicine
+P0217,22,Other,Numbness,102,90,97.5,Thyroid Disorder,Low,Neurology
+P0218,62,Female,Vomiting,122,72,101.8,"Anemia, Asthma",Medium,General Medicine
+P0219,73,Female,"Cough, Dizziness, Vomiting",123,74,101.4,"Heart Disease, Hypertension",Medium,General Medicine
+P0220,42,Male,"Abdominal Pain, Cough, Back Pain",119,68,98.3,Diabetes,Low,General Medicine
+P0221,44,Female,Back Pain,113,70,99.4,"Hypertension, Heart Disease",Low,General Medicine
+P0222,47,Male,"Fatigue, Sore Throat, Dizziness",140,90,100.3,Thyroid Disorder,Medium,General Medicine
+P0223,81,Female,"Sore Throat, Vomiting, Fever",145,95,97.7,"Heart Disease, Hypertension",Medium,General Medicine
+P0224,89,Male,"Fatigue, Shortness of Breath, Chest Pain",132,100,99.9,"Asthma, Thyroid Disorder",Low,Cardiology
+P0225,26,Male,"Fatigue, Dizziness",136,82,99.1,Heart Disease,Low,General Medicine
+P0226,59,Other,Sore Throat,115,79,99.4,"None, Heart Disease",Low,General Medicine
+P0227,39,Other,"Headache, Fever, Chest Pain",147,45,100.4,"Heart Disease, Hypertension",High,Cardiology
+P0228,24,Female,Chest Pain,145,73,97.9,Thyroid Disorder,High,Cardiology
+P0229,3,Male,Back Pain,99,99,98.0,Diabetes,Low,General Medicine
+P0230,15,Other,"Shortness of Breath, Vomiting, Back Pain",122,82,100.5,"Kidney Disease, Diabetes",Medium,Pulmonology
+P0231,86,Female,"Back Pain, Dizziness",140,57,98.8,None,Low,General Medicine
+P0232,66,Male,Sore Throat,137,90,98.5,Diabetes,Low,General Medicine
+P0233,39,Female,"Numbness, Vomiting",171,70,97.4,"Anemia, Asthma",High,Neurology
+P0234,30,Female,Sore Throat,89,54,95.8,Kidney Disease,Low,General Medicine
+P0235,5,Female,Headache,82,75,99.1,"Heart Disease, None",Low,General Medicine
+P0236,37,Male,"Blurred Vision, Fever",134,79,98.8,Asthma,Low,Neurology
+P0237,49,Female,Sore Throat,100,75,99.2,Heart Disease,Low,General Medicine
+P0238,39,Female,"Cough, Fever",89,114,97.4,"Thyroid Disorder, Diabetes",Medium,General Medicine
+P0239,25,Male,"Fatigue, Back Pain",118,80,100.1,Kidney Disease,Medium,General Medicine
+P0240,54,Male,"Back Pain, Fever",113,84,102.1,"None, Asthma",High,Emergency
+P0241,74,Male,"Blurred Vision, Vomiting",117,72,99.1,"Thyroid Disorder, Hypertension",Low,Neurology
+P0242,54,Male,"Fever, Dizziness",130,74,96.6,Anemia,Low,General Medicine
+P0243,50,Other,"Cough, Vomiting",123,79,98.3,Asthma,Low,General Medicine
+P0244,13,Female,"Vomiting, Fatigue, Cough",138,83,96.1,"Heart Disease, Kidney Disease",Low,General Medicine
+P0245,73,Female,Dizziness,80,66,98.1,Diabetes,Low,General Medicine
+P0246,67,Other,"Cough, Fatigue, Back Pain",84,88,100.0,Kidney Disease,Low,General Medicine
+P0247,5,Female,"Numbness, Chest Pain, Shortness of Breath",101,94,98.0,Hypertension,Low,Cardiology
+P0248,18,Female,Chest Pain,122,72,98.7,Diabetes,Low,Cardiology
+P0249,81,Male,"Abdominal Pain, Sore Throat, Blurred Vision",138,80,101.2,"Kidney Disease, Thyroid Disorder",Medium,Neurology
+P0250,40,Other,"Chest Pain, Abdominal Pain",136,55,99.1,Anemia,Low,Cardiology
+P0251,6,Female,"Headache, Sore Throat, Blurred Vision",142,80,97.4,Kidney Disease,Medium,Neurology
+P0252,48,Other,Headache,110,92,99.2,"Anemia, None",Low,General Medicine
+P0253,89,Male,"Headache, Cough",101,88,100.0,Thyroid Disorder,Low,General Medicine
+P0254,42,Female,"Fatigue, Back Pain, Fever",118,74,97.1,"Asthma, Hypertension",Low,General Medicine
+P0255,30,Other,"Fatigue, Chest Pain",151,85,97.2,Anemia,High,Cardiology
+P0256,13,Male,"Back Pain, Cough",107,82,98.5,None,Low,General Medicine
+P0257,17,Male,"Abdominal Pain, Sore Throat, Fatigue",114,66,97.8,Kidney Disease,Low,General Medicine
+P0258,71,Female,"Vomiting, Sore Throat",106,88,98.5,"None, Thyroid Disorder",Low,General Medicine
+P0259,63,Other,"Dizziness, Cough, Sore Throat",96,74,99.6,Thyroid Disorder,Low,General Medicine
+P0260,20,Female,"Back Pain, Numbness",133,73,98.7,Kidney Disease,Low,Neurology
+P0261,64,Male,"Numbness, Chest Pain, Dizziness",112,82,95.7,"Thyroid Disorder, Diabetes",Low,Cardiology
+P0262,82,Other,"Cough, Headache, Fatigue",139,85,97.6,"Kidney Disease, Thyroid Disorder",Low,General Medicine
+P0263,7,Male,"Back Pain, Sore Throat, Numbness",142,73,98.2,Thyroid Disorder,Medium,Neurology
+P0264,4,Other,"Fever, Dizziness",95,58,95.1,"Hypertension, Diabetes",Low,General Medicine
+P0265,39,Female,"Shortness of Breath, Sore Throat",145,81,99.7,Hypertension,High,Pulmonology
+P0266,47,Male,"Sore Throat, Cough",110,96,100.4,Kidney Disease,Medium,General Medicine
+P0267,27,Other,Blurred Vision,83,71,100.1,"Hypertension, Diabetes",Medium,Neurology
+P0268,34,Male,"Sore Throat, Blurred Vision, Chest Pain",101,61,100.6,"None, Asthma",Medium,Cardiology
+P0269,15,Female,"Back Pain, Shortness of Breath, Abdominal Pain",170,55,97.8,"Anemia, Diabetes",High,Pulmonology
+P0270,53,Other,Headache,110,77,96.6,"Asthma, Hypertension",Low,General Medicine
+P0271,50,Other,"Abdominal Pain, Sore Throat, Headache",132,99,98.7,"Thyroid Disorder, Diabetes",Low,General Medicine
+P0272,46,Male,"Chest Pain, Headache, Fever",134,104,100.7,"Kidney Disease, Heart Disease",Medium,Cardiology
+P0273,84,Male,"Fatigue, Cough, Headache",92,75,97.3,Hypertension,Low,General Medicine
+P0274,2,Female,"Fatigue, Chest Pain",119,70,99.9,"Diabetes, Anemia",Low,Cardiology
+P0275,77,Female,"Fever, Vomiting",117,62,97.0,Thyroid Disorder,Low,General Medicine
+P0276,38,Other,"Shortness of Breath, Vomiting",152,95,96.8,Kidney Disease,High,Pulmonology
+P0277,33,Male,Dizziness,138,92,97.9,Kidney Disease,Low,General Medicine
+P0278,54,Male,Fever,120,102,99.7,"Anemia, Kidney Disease",Medium,General Medicine
+P0279,74,Male,"Abdominal Pain, Sore Throat, Blurred Vision",121,68,97.7,Diabetes,Low,Neurology
+P0280,66,Male,"Shortness of Breath, Chest Pain",141,93,99.2,"Diabetes, Thyroid Disorder",High,Cardiology
+P0281,44,Female,Headache,125,68,101.1,None,Medium,General Medicine
+P0282,8,Male,"Numbness, Blurred Vision",127,82,99.2,"Diabetes, None",Low,Neurology
+P0283,84,Female,"Fatigue, Fever, Numbness",140,71,100.4,Hypertension,Medium,Neurology
+P0284,26,Female,"Fever, Blurred Vision",123,71,98.4,"Asthma, Heart Disease",Low,Neurology
+P0285,60,Female,Numbness,112,83,96.9,Kidney Disease,Low,Neurology
+P0286,53,Male,"Fatigue, Sore Throat, Back Pain",109,79,101.6,Thyroid Disorder,Medium,General Medicine
+P0287,82,Female,Numbness,130,50,97.1,"Kidney Disease, Hypertension",Low,Neurology
+P0288,35,Other,Dizziness,119,73,96.3,Kidney Disease,Low,General Medicine
+P0289,79,Male,"Numbness, Sore Throat, Cough",114,54,99.0,"Hypertension, None",Low,Neurology
+P0290,61,Female,"Dizziness, Numbness, Chest Pain",132,85,99.9,"Anemia, Kidney Disease",Low,Cardiology
+P0291,20,Male,Cough,182,85,102.3,"None, Hypertension",High,Emergency
+P0292,66,Male,Sore Throat,128,99,99.1,None,Low,General Medicine
+P0293,39,Female,"Fatigue, Vomiting",133,56,100.6,"Heart Disease, None",Medium,General Medicine
+P0294,15,Other,Headache,147,91,97.3,"None, Thyroid Disorder",Medium,General Medicine
+P0295,87,Other,"Headache, Cough",92,101,95.0,"Thyroid Disorder, Asthma",Medium,General Medicine
+P0296,38,Other,"Vomiting, Dizziness",127,55,98.3,Anemia,Low,General Medicine
+P0297,60,Other,"Dizziness, Fatigue",152,55,101.1,"Diabetes, Kidney Disease",Medium,General Medicine
+P0298,70,Female,Vomiting,137,60,100.0,Heart Disease,Low,General Medicine
+P0299,28,Female,Cough,136,61,100.1,"Heart Disease, Hypertension",Medium,General Medicine
+P0300,56,Female,"Back Pain, Vomiting, Chest Pain",105,58,97.6,"Kidney Disease, Asthma",Low,Cardiology
+P0301,31,Male,"Dizziness, Blurred Vision, Vomiting",121,60,99.9,"None, Anemia",Low,Neurology
+P0302,1,Other,"Vomiting, Dizziness, Fatigue",110,112,96.5,None,Medium,General Medicine
+P0303,76,Male,"Numbness, Abdominal Pain, Fever",103,87,99.7,Diabetes,Low,Neurology
+P0304,37,Male,"Dizziness, Sore Throat, Vomiting",144,90,99.9,Hypertension,Medium,General Medicine
+P0305,56,Other,"Dizziness, Sore Throat",140,83,98.0,"Diabetes, Heart Disease",Low,General Medicine
+P0306,78,Male,"Dizziness, Vomiting, Sore Throat",116,80,97.4,"Asthma, None",Low,General Medicine
+P0307,20,Male,"Chest Pain, Abdominal Pain, Fatigue",122,72,97.5,"Diabetes, Hypertension",Low,Cardiology
+P0308,59,Female,"Abdominal Pain, Shortness of Breath, Blurred Vision",109,81,95.4,"Anemia, Diabetes",Low,Neurology
+P0309,78,Male,Cough,102,104,101.4,"Hypertension, Kidney Disease",Medium,General Medicine
+P0310,89,Female,Sore Throat,115,93,98.9,"Kidney Disease, Anemia",Low,General Medicine
+P0311,56,Male,"Fatigue, Headache, Back Pain",80,124,97.1,Hypertension,High,Emergency
+P0312,45,Female,"Shortness of Breath, Cough, Sore Throat",128,69,99.2,Asthma,Low,Pulmonology
+P0313,85,Female,Dizziness,125,70,100.0,"Anemia, Thyroid Disorder",Low,General Medicine
+P0314,86,Other,Blurred Vision,116,92,96.6,Diabetes,Low,Neurology
+P0315,43,Female,"Back Pain, Sore Throat",119,110,99.8,"Thyroid Disorder, Anemia",Medium,General Medicine
+P0316,76,Female,"Cough, Chest Pain, Dizziness",126,82,98.0,Anemia,Low,Cardiology
+P0317,68,Female,"Fatigue, Dizziness, Chest Pain",98,90,96.8,Hypertension,Low,Cardiology
+P0318,69,Female,"Fever, Cough, Fatigue",152,52,99.8,Heart Disease,Medium,General Medicine
+P0319,66,Male,Dizziness,118,84,98.9,Kidney Disease,Low,General Medicine
+P0320,77,Other,"Cough, Headache",128,70,97.9,Heart Disease,Low,General Medicine
+P0321,4,Male,"Headache, Blurred Vision, Fatigue",140,88,99.5,Hypertension,Low,Neurology
+P0322,83,Other,"Chest Pain, Sore Throat, Numbness",132,75,99.8,"None, Thyroid Disorder",Low,Cardiology
+P0323,54,Male,Fever,93,97,100.4,"Asthma, Thyroid Disorder",Medium,General Medicine
+P0324,15,Other,"Blurred Vision, Numbness",151,66,100.7,Anemia,Medium,Neurology
+P0325,89,Other,"Headache, Numbness, Sore Throat",141,113,97.9,"Asthma, Thyroid Disorder",Medium,Neurology
+P0326,11,Other,"Headache, Abdominal Pain",119,104,99.9,None,Medium,General Medicine
+P0327,74,Male,"Vomiting, Abdominal Pain",120,104,99.3,"Asthma, Hypertension",Medium,General Medicine
+P0328,66,Other,Dizziness,121,73,98.4,"Kidney Disease, Asthma",Low,General Medicine
+P0329,26,Male,"Fatigue, Sore Throat",87,82,95.0,Kidney Disease,Low,General Medicine
+P0330,87,Male,"Cough, Headache",109,88,99.7,"Asthma, Diabetes",Low,General Medicine
+P0331,43,Male,Headache,114,85,98.1,"Thyroid Disorder, Diabetes",Low,General Medicine
+P0332,34,Male,"Blurred Vision, Back Pain",131,85,96.7,"Asthma, Thyroid Disorder",Low,Neurology
+P0333,52,Male,"Fatigue, Abdominal Pain",130,83,102.1,"Heart Disease, Asthma",High,Emergency
+P0334,36,Male,Vomiting,139,69,100.7,"Asthma, Diabetes",Medium,General Medicine
+P0335,77,Other,"Fever, Sore Throat",100,76,99.2,"Anemia, Heart Disease",Low,General Medicine
+P0336,74,Other,"Abdominal Pain, Headache, Fatigue",100,71,99.2,Diabetes,Low,General Medicine
+P0337,63,Female,Headache,123,65,100.5,"Thyroid Disorder, Hypertension",Medium,General Medicine
+P0338,1,Male,"Fever, Blurred Vision",118,87,95.0,Kidney Disease,Low,Neurology
+P0339,47,Other,"Cough, Vomiting",122,88,98.5,"Heart Disease, Thyroid Disorder",Low,General Medicine
+P0340,9,Other,"Blurred Vision, Cough, Chest Pain",120,88,100.1,Thyroid Disorder,Medium,Cardiology
+P0341,88,Female,"Fatigue, Dizziness",142,75,98.0,Asthma,Medium,General Medicine
+P0342,26,Other,"Vomiting, Fatigue, Fever",135,67,96.8,None,Low,General Medicine
+P0343,24,Male,"Dizziness, Abdominal Pain, Fatigue",114,98,97.4,"Hypertension, Heart Disease",Low,General Medicine
+P0344,36,Other,Dizziness,125,76,96.7,"Hypertension, Asthma",Low,General Medicine
+P0345,69,Other,"Headache, Blurred Vision, Dizziness",130,68,97.9,"Heart Disease, Asthma",Low,Neurology
+P0346,81,Male,"Dizziness, Numbness",129,71,97.0,Thyroid Disorder,Low,Neurology
+P0347,35,Other,"Sore Throat, Back Pain",139,113,97.6,Anemia,Medium,General Medicine
+P0348,57,Female,"Sore Throat, Blurred Vision, Back Pain",92,84,98.4,None,Low,Neurology
+P0349,35,Other,"Chest Pain, Fatigue",153,93,95.6,"Hypertension, Thyroid Disorder",High,Cardiology
+P0350,41,Other,Fever,80,88,100.8,Asthma,Medium,General Medicine
+P0351,39,Male,"Dizziness, Vomiting",105,93,100.1,Thyroid Disorder,Medium,General Medicine
+P0352,73,Other,Vomiting,154,63,97.3,"None, Kidney Disease",Medium,General Medicine
+P0353,41,Male,"Shortness of Breath, Fatigue, Dizziness",99,111,99.1,"Thyroid Disorder, Hypertension",Medium,Pulmonology
+P0354,44,Male,"Fatigue, Dizziness",139,83,96.1,"Heart Disease, Anemia",Low,General Medicine
+P0355,72,Female,Shortness of Breath,129,111,96.6,"Heart Disease, Diabetes",Medium,Pulmonology
+P0356,70,Female,"Back Pain, Shortness of Breath",95,77,97.6,"Kidney Disease, Asthma",Low,Pulmonology
+P0357,81,Female,"Sore Throat, Back Pain, Headache",119,81,99.7,"Diabetes, Heart Disease",Low,General Medicine
+P0358,58,Other,"Vomiting, Sore Throat, Dizziness",84,65,99.3,Heart Disease,Low,General Medicine
+P0359,80,Male,"Back Pain, Cough",88,52,95.0,"Anemia, Kidney Disease",Low,General Medicine
+P0360,23,Female,"Abdominal Pain, Shortness of Breath, Back Pain",110,63,97.9,"Heart Disease, Diabetes",Low,Pulmonology
+P0361,5,Male,"Back Pain, Blurred Vision, Shortness of Breath",137,91,99.6,None,Low,Neurology
+P0362,84,Other,"Shortness of Breath, Numbness, Sore Throat",96,68,98.7,Diabetes,Low,Neurology
+P0363,32,Female,"Back Pain, Abdominal Pain",122,77,99.5,Hypertension,Low,General Medicine
+P0364,14,Male,"Chest Pain, Vomiting, Numbness",139,75,97.8,"Anemia, Kidney Disease",Low,Cardiology
+P0365,66,Male,"Dizziness, Headache",89,62,98.5,Diabetes,Low,General Medicine
+P0366,67,Other,"Shortness of Breath, Fatigue, Fever",87,63,95.2,Thyroid Disorder,Low,Pulmonology
+P0367,68,Male,Vomiting,127,101,95.4,"Hypertension, Kidney Disease",Medium,General Medicine
+P0368,12,Female,Fever,144,73,100.1,"Diabetes, Hypertension",Medium,General Medicine
+P0369,88,Female,"Numbness, Fatigue",155,83,97.9,"Hypertension, Thyroid Disorder",Medium,Neurology
+P0370,14,Other,"Headache, Shortness of Breath",110,77,97.3,Kidney Disease,Low,Pulmonology
+P0371,66,Male,"Abdominal Pain, Numbness, Headache",111,71,98.5,None,Low,Neurology
+P0372,10,Other,"Sore Throat, Headache",130,76,98.7,Hypertension,Low,General Medicine
+P0373,54,Other,"Vomiting, Sore Throat, Fatigue",138,56,97.6,"Diabetes, Asthma",Low,General Medicine
+P0374,41,Other,Chest Pain,138,87,99.9,Anemia,Low,Cardiology
+P0375,8,Female,Fever,139,45,98.2,"Thyroid Disorder, Diabetes",Low,General Medicine
+P0376,12,Female,"Dizziness, Headache",118,78,99.1,Heart Disease,Low,General Medicine
+P0377,13,Other,"Back Pain, Shortness of Breath",134,73,95.9,Diabetes,Low,Pulmonology
+P0378,31,Female,"Chest Pain, Vomiting",145,69,98.3,"Diabetes, Kidney Disease",High,Cardiology
+P0379,11,Female,"Blurred Vision, Shortness of Breath",132,100,97.5,Hypertension,Low,Neurology
+P0380,9,Female,Abdominal Pain,85,70,97.9,"Thyroid Disorder, Kidney Disease",Low,General Medicine
+P0381,80,Other,"Sore Throat, Fatigue",138,102,96.5,Asthma,Medium,General Medicine
+P0382,52,Other,"Sore Throat, Cough, Fatigue",132,87,96.9,"Kidney Disease, None",Low,General Medicine
+P0383,38,Other,Fever,99,76,98.2,Hypertension,Low,General Medicine
+P0384,7,Male,"Fatigue, Abdominal Pain",139,50,102.4,Asthma,High,Emergency
+P0385,71,Other,"Abdominal Pain, Cough, Fatigue",137,91,98.4,"None, Asthma",Low,General Medicine
+P0386,21,Male,"Vomiting, Abdominal Pain, Blurred Vision",116,71,99.0,Anemia,Low,Neurology
+P0387,39,Other,"Back Pain, Fever",89,95,99.0,"Heart Disease, Thyroid Disorder",Low,General Medicine
+P0388,53,Male,"Shortness of Breath, Blurred Vision, Cough",141,65,98.4,Thyroid Disorder,High,Neurology
+P0389,60,Female,"Cough, Fatigue, Fever",119,113,97.4,Anemia,Medium,General Medicine
+P0390,68,Male,"Vomiting, Chest Pain",110,74,99.2,Thyroid Disorder,Low,Cardiology
+P0391,82,Female,"Abdominal Pain, Vomiting",80,73,97.1,"Diabetes, Kidney Disease",Low,General Medicine
+P0392,21,Other,"Chest Pain, Numbness, Dizziness",80,84,97.3,Hypertension,Low,Cardiology
+P0393,41,Other,"Fatigue, Chest Pain",107,107,99.4,None,Medium,Cardiology
+P0394,58,Male,"Abdominal Pain, Numbness",110,92,97.3,"Thyroid Disorder, Anemia",Low,Neurology
+P0395,28,Male,Abdominal Pain,148,98,98.8,"Hypertension, Anemia",Medium,General Medicine
+P0396,79,Male,"Sore Throat, Cough, Fever",135,78,99.9,"None, Diabetes",Low,General Medicine
+P0397,45,Male,Cough,129,69,101.4,Anemia,Medium,General Medicine
+P0398,77,Other,"Back Pain, Fever, Shortness of Breath",122,96,99.3,Thyroid Disorder,Low,Pulmonology
+P0399,24,Female,Fatigue,120,71,97.2,None,Low,General Medicine
+P0400,11,Male,"Headache, Shortness of Breath, Blurred Vision",80,70,100.2,"Kidney Disease, Diabetes",Medium,Neurology
+P0401,58,Female,Numbness,125,69,97.2,Thyroid Disorder,Low,Neurology
+P0402,38,Female,"Fever, Fatigue",137,80,97.1,Thyroid Disorder,Low,General Medicine
+P0403,81,Other,"Fever, Dizziness",139,68,96.3,"Kidney Disease, Anemia",Low,General Medicine
+P0404,50,Female,"Chest Pain, Headache",150,76,98.2,"Hypertension, Thyroid Disorder",High,Cardiology
+P0405,89,Other,"Shortness of Breath, Sore Throat",108,80,100.6,"Hypertension, Thyroid Disorder",Medium,Pulmonology
+P0406,16,Female,Fatigue,155,88,100.0,"Thyroid Disorder, Heart Disease",Medium,General Medicine
+P0407,11,Other,Vomiting,103,83,99.7,Heart Disease,Low,General Medicine
+P0408,89,Male,"Numbness, Cough",80,72,97.3,"Kidney Disease, None",Low,Neurology
+P0409,84,Other,"Shortness of Breath, Fever, Headache",115,75,98.9,"None, Thyroid Disorder",Low,Pulmonology
+P0410,32,Male,Sore Throat,136,91,97.9,Anemia,Low,General Medicine
+P0411,12,Male,"Headache, Fever",116,84,98.0,Asthma,Low,General Medicine
+P0412,8,Other,Back Pain,152,85,100.8,"Asthma, Kidney Disease",Medium,General Medicine
+P0413,23,Other,"Shortness of Breath, Vomiting, Sore Throat",99,87,98.9,"Heart Disease, Asthma",Low,Pulmonology
+P0414,22,Female,"Numbness, Dizziness, Headache",120,105,98.9,"Kidney Disease, Heart Disease",Medium,Neurology
+P0415,2,Female,"Cough, Back Pain",127,70,97.6,"Kidney Disease, Diabetes",Low,General Medicine
+P0416,23,Female,"Vomiting, Fever",131,87,99.5,Hypertension,Low,General Medicine
+P0417,43,Male,"Fatigue, Blurred Vision",136,92,97.1,"Heart Disease, Diabetes",Low,Neurology
+P0418,23,Male,"Shortness of Breath, Vomiting",124,91,99.0,Anemia,Low,Pulmonology
+P0419,25,Other,"Numbness, Dizziness, Headache",107,87,98.0,"Anemia, Asthma",Low,Neurology
+P0420,1,Male,"Sore Throat, Dizziness, Chest Pain",119,88,98.9,Anemia,Low,Cardiology
+P0421,4,Male,"Numbness, Fever, Fatigue",115,67,97.5,Diabetes,Low,Neurology
+P0422,10,Other,Sore Throat,131,91,99.3,Thyroid Disorder,Low,General Medicine
+P0423,27,Male,"Shortness of Breath, Cough, Chest Pain",100,102,100.9,Asthma,Medium,Cardiology
+P0424,58,Other,"Dizziness, Fever",172,58,96.7,"Anemia, None",High,Emergency
+P0425,70,Male,"Fatigue, Vomiting, Fever",103,48,99.3,Heart Disease,Low,General Medicine
+P0426,26,Other,"Fever, Fatigue",126,58,95.8,"Hypertension, None",Low,General Medicine
+P0427,21,Male,"Chest Pain, Shortness of Breath, Back Pain",111,62,99.9,"Kidney Disease, Hypertension",Low,Cardiology
+P0428,14,Female,Dizziness,114,71,98.9,"Anemia, Heart Disease",Low,General Medicine
+P0429,58,Male,"Shortness of Breath, Headache, Numbness",157,108,100.8,None,High,Neurology
+P0430,82,Male,"Vomiting, Sore Throat",139,75,98.5,"None, Kidney Disease",Low,General Medicine
+P0431,19,Male,"Chest Pain, Cough, Abdominal Pain",103,79,98.1,"Kidney Disease, Heart Disease",Low,Cardiology
+P0432,30,Male,"Fever, Shortness of Breath, Back Pain",110,81,100.4,"Heart Disease, None",Medium,Pulmonology
+P0433,45,Male,"Headache, Fatigue, Blurred Vision",111,66,97.1,Hypertension,Low,Neurology
+P0434,47,Female,Shortness of Breath,117,64,101.2,Thyroid Disorder,Medium,Pulmonology
+P0435,4,Male,"Chest Pain, Blurred Vision",93,79,99.7,Thyroid Disorder,Low,Cardiology
+P0436,16,Other,"Dizziness, Vomiting, Chest Pain",137,84,96.3,Kidney Disease,Low,Cardiology
+P0437,10,Male,Vomiting,122,53,98.9,Diabetes,Low,General Medicine
+P0438,42,Female,"Sore Throat, Blurred Vision, Back Pain",117,73,99.2,"Kidney Disease, None",Low,Neurology
+P0439,69,Other,"Sore Throat, Abdominal Pain",112,86,98.1,"Asthma, Hypertension",Low,General Medicine
+P0440,5,Other,"Vomiting, Chest Pain",147,93,100.5,"Diabetes, Thyroid Disorder",High,Cardiology
+P0441,39,Other,"Sore Throat, Shortness of Breath",80,77,99.8,Diabetes,Low,Pulmonology
+P0442,54,Female,Vomiting,135,73,97.9,Thyroid Disorder,Low,General Medicine
+P0443,57,Female,"Cough, Sore Throat",135,98,98.2,Heart Disease,Low,General Medicine
+P0444,7,Female,"Sore Throat, Headache",115,85,98.1,Hypertension,Low,General Medicine
+P0445,10,Male,Vomiting,138,67,100.6,"Thyroid Disorder, None",Medium,General Medicine
+P0446,44,Male,Dizziness,114,82,98.1,Kidney Disease,Low,General Medicine
+P0447,84,Female,Headache,141,110,96.4,"Thyroid Disorder, Anemia",Medium,General Medicine
+P0448,7,Male,"Fatigue, Shortness of Breath, Blurred Vision",98,77,98.0,Thyroid Disorder,Low,Neurology
+P0449,32,Male,Headache,124,81,99.5,"Heart Disease, Asthma",Low,General Medicine
+P0450,42,Male,Chest Pain,121,87,99.2,"Heart Disease, Asthma",Low,Cardiology
+P0451,14,Female,"Sore Throat, Cough",135,61,98.8,"Heart Disease, Diabetes",Low,General Medicine
+P0452,19,Other,"Abdominal Pain, Blurred Vision, Back Pain",92,84,98.2,Anemia,Low,Neurology
+P0453,12,Male,Headache,103,75,97.8,Thyroid Disorder,Low,General Medicine
+P0454,71,Female,"Vomiting, Dizziness, Abdominal Pain",109,87,101.3,"Thyroid Disorder, Anemia",Medium,General Medicine
+P0455,24,Other,"Chest Pain, Headache, Dizziness",114,82,99.0,Anemia,Low,Cardiology
+P0456,70,Female,Vomiting,156,88,97.7,"Heart Disease, Kidney Disease",Medium,General Medicine
+P0457,74,Other,"Abdominal Pain, Blurred Vision, Shortness of Breath",128,93,95.0,"Thyroid Disorder, Hypertension",Low,Neurology
+P0458,39,Female,"Cough, Blurred Vision",99,69,98.5,Hypertension,Low,Neurology
+P0459,40,Other,"Fever, Back Pain, Abdominal Pain",113,67,95.2,Anemia,Low,General Medicine
+P0460,21,Female,"Cough, Vomiting, Numbness",119,72,97.0,"Hypertension, Kidney Disease",Low,Neurology
+P0461,86,Female,Headache,100,86,100.8,Thyroid Disorder,Medium,General Medicine
+P0462,63,Female,Abdominal Pain,127,66,98.6,"Thyroid Disorder, Heart Disease",Low,General Medicine
+P0463,3,Other,"Vomiting, Fatigue, Fever",121,93,96.9,"Diabetes, None",Low,General Medicine
+P0464,52,Male,"Numbness, Dizziness, Chest Pain",119,46,96.8,Thyroid Disorder,Low,Cardiology
+P0465,43,Female,"Cough, Fever",122,58,99.8,Heart Disease,Low,General Medicine
+P0466,36,Male,"Back Pain, Fatigue, Sore Throat",106,65,96.7,Anemia,Low,General Medicine
+P0467,9,Female,"Abdominal Pain, Numbness",135,77,96.6,Kidney Disease,Low,Neurology
+P0468,84,Male,"Cough, Headache",122,61,98.7,"Diabetes, None",Low,General Medicine
+P0469,80,Other,Dizziness,113,73,97.0,"Kidney Disease, Asthma",Low,General Medicine
+P0470,4,Male,"Abdominal Pain, Dizziness, Sore Throat",128,67,100.1,Anemia,Medium,General Medicine
+P0471,1,Other,"Abdominal Pain, Dizziness, Cough",125,79,100.1,"None, Thyroid Disorder",Medium,General Medicine
+P0472,4,Other,Fever,148,67,98.9,"Diabetes, Kidney Disease",Medium,General Medicine
+P0473,69,Male,"Shortness of Breath, Fatigue, Chest Pain",143,118,99.3,Kidney Disease,High,Cardiology
+P0474,5,Other,"Abdominal Pain, Shortness of Breath",126,87,98.0,"Hypertension, Diabetes",Low,Pulmonology
+P0475,6,Other,"Vomiting, Sore Throat, Fever",99,97,100.4,Anemia,Medium,General Medicine
+P0476,73,Other,"Vomiting, Fever",117,78,95.0,Asthma,Low,General Medicine
+P0477,3,Female,"Sore Throat, Cough, Blurred Vision",121,95,97.7,Hypertension,Low,Neurology
+P0478,62,Female,"Shortness of Breath, Abdominal Pain",113,71,100.9,Heart Disease,Medium,Pulmonology
+P0479,34,Other,"Fatigue, Numbness",106,49,99.5,"Thyroid Disorder, Heart Disease",Low,Neurology
+P0480,48,Female,"Cough, Dizziness, Back Pain",145,103,99.2,"Hypertension, Thyroid Disorder",Medium,General Medicine
+P0481,11,Other,"Sore Throat, Headache, Blurred Vision",110,89,97.9,Hypertension,Low,Neurology
+P0482,28,Female,Shortness of Breath,106,66,99.2,"Diabetes, Anemia",Low,Pulmonology
+P0483,20,Female,"Chest Pain, Fatigue, Vomiting",131,72,99.7,"Hypertension, Heart Disease",Low,Cardiology
+P0484,4,Female,"Chest Pain, Abdominal Pain",93,74,99.0,Hypertension,Low,Cardiology
+P0485,15,Female,"Chest Pain, Sore Throat",140,60,99.5,"Anemia, Heart Disease",Low,Cardiology
+P0486,77,Male,"Fever, Abdominal Pain",133,84,99.5,Asthma,Low,General Medicine
+P0487,6,Female,"Fatigue, Numbness, Abdominal Pain",133,108,98.2,"Anemia, Asthma",Medium,Neurology
+P0488,38,Other,"Abdominal Pain, Chest Pain",100,71,96.4,None,Low,Cardiology
+P0489,62,Male,"Fever, Headache",125,79,98.1,Heart Disease,Low,General Medicine
+P0490,25,Male,"Blurred Vision, Back Pain",101,73,98.3,"Diabetes, Heart Disease",Low,Neurology
+P0491,87,Male,"Sore Throat, Fatigue",127,69,99.7,"None, Thyroid Disorder",Low,General Medicine
+P0492,45,Other,"Fatigue, Shortness of Breath",129,93,97.6,"Diabetes, Kidney Disease",Low,Pulmonology
+P0493,19,Other,Headache,127,107,98.1,Anemia,Medium,General Medicine
+P0494,64,Female,"Cough, Abdominal Pain",113,54,99.2,Asthma,Low,General Medicine
+P0495,14,Male,"Blurred Vision, Back Pain, Dizziness",87,91,100.0,"Hypertension, Heart Disease",Low,Neurology
+P0496,68,Male,Shortness of Breath,102,74,99.6,Kidney Disease,Low,Pulmonology
+P0497,86,Other,"Blurred Vision, Fatigue",117,77,98.5,Kidney Disease,Low,Neurology
+P0498,69,Other,"Headache, Blurred Vision",143,67,97.3,"Diabetes, Anemia",Medium,Neurology
+P0499,44,Female,Headache,125,89,99.4,Hypertension,Low,General Medicine
+P0500,47,Male,Back Pain,173,63,98.2,"Asthma, Thyroid Disorder",High,Emergency
+P0501,19,Other,"Abdominal Pain, Chest Pain",117,94,100.8,"Thyroid Disorder, Asthma",Medium,Cardiology
+P0502,20,Female,Numbness,146,88,100.2,Thyroid Disorder,Medium,Neurology
+P0503,55,Other,"Headache, Back Pain, Dizziness",100,80,98.0,"Anemia, Hypertension",Low,General Medicine
+P0504,86,Other,Sore Throat,80,66,97.0,Anemia,Low,General Medicine
+P0505,55,Other,"Back Pain, Dizziness, Cough",138,76,99.6,"Asthma, Anemia",Low,General Medicine
+P0506,83,Male,"Headache, Dizziness",124,76,95.3,"Kidney Disease, Heart Disease",Low,General Medicine
+P0507,40,Other,Blurred Vision,80,58,102.1,"Kidney Disease, Anemia",High,Neurology
+P0508,61,Male,Cough,105,75,97.3,"None, Anemia",Low,General Medicine
+P0509,85,Male,"Abdominal Pain, Fever",90,75,97.6,"Asthma, Kidney Disease",Low,General Medicine
+P0510,9,Male,"Headache, Chest Pain, Sore Throat",117,71,99.7,Kidney Disease,Low,Cardiology
+P0511,17,Female,Dizziness,113,68,100.0,None,Low,General Medicine
+P0512,13,Female,"Headache, Back Pain, Shortness of Breath",120,75,98.6,"Diabetes, Kidney Disease",Low,Pulmonology
+P0513,11,Male,Shortness of Breath,112,70,96.3,"Diabetes, Anemia",Low,Pulmonology
+P0514,76,Other,Fatigue,82,85,99.6,"None, Anemia",Low,General Medicine
+P0515,12,Other,"Cough, Vomiting",96,95,99.4,Anemia,Low,General Medicine
+P0516,46,Male,Vomiting,128,82,97.5,Diabetes,Low,General Medicine
+P0517,82,Male,"Dizziness, Headache",136,61,99.3,Thyroid Disorder,Low,General Medicine
+P0518,19,Male,"Numbness, Chest Pain, Cough",141,96,101.7,Hypertension,High,Cardiology
+P0519,76,Female,"Back Pain, Shortness of Breath",115,70,98.7,Thyroid Disorder,Low,Pulmonology
+P0520,74,Other,"Abdominal Pain, Shortness of Breath, Cough",128,97,95.8,Hypertension,Low,Pulmonology
+P0521,10,Male,"Back Pain, Vomiting, Dizziness",97,80,99.1,"Kidney Disease, Thyroid Disorder",Low,General Medicine
+P0522,2,Male,Headache,98,99,98.6,Asthma,Low,General Medicine
+P0523,40,Other,"Blurred Vision, Back Pain, Sore Throat",131,93,95.0,"None, Thyroid Disorder",Low,Neurology
+P0524,55,Other,"Shortness of Breath, Fatigue",151,71,98.5,Thyroid Disorder,High,Pulmonology
+P0525,85,Female,"Fever, Shortness of Breath, Abdominal Pain",108,89,100.4,"Diabetes, Anemia",Medium,Pulmonology
+P0526,38,Female,"Blurred Vision, Cough, Fatigue",117,87,99.7,Kidney Disease,Low,Neurology
+P0527,18,Female,Vomiting,105,77,100.1,"Kidney Disease, Heart Disease",Medium,General Medicine
+P0528,30,Other,Sore Throat,122,100,98.0,"Diabetes, None",Low,General Medicine
+P0529,67,Other,Fever,163,59,97.9,"Asthma, None",High,Emergency
+P0530,75,Male,"Fatigue, Headache",124,52,100.2,"Thyroid Disorder, Kidney Disease",Medium,General Medicine
+P0531,57,Female,Numbness,118,74,100.5,Heart Disease,Medium,Neurology
+P0532,28,Male,"Cough, Fatigue",181,63,98.1,Hypertension,High,Emergency
+P0533,56,Other,"Vomiting, Blurred Vision",124,48,100.3,Heart Disease,Medium,Neurology
+P0534,11,Other,"Back Pain, Shortness of Breath",110,96,96.6,Asthma,Low,Pulmonology
+P0535,69,Male,"Cough, Abdominal Pain",144,81,100.7,Heart Disease,Medium,General Medicine
+P0536,31,Other,"Numbness, Back Pain, Chest Pain",160,67,99.0,None,High,Cardiology
+P0537,69,Other,Back Pain,97,81,98.2,Hypertension,Low,General Medicine
+P0538,64,Female,"Fatigue, Sore Throat",116,53,96.2,"Hypertension, Anemia",Low,General Medicine
+P0539,6,Male,"Sore Throat, Headache, Cough",114,103,99.2,Kidney Disease,Medium,General Medicine
+P0540,37,Female,"Fatigue, Cough",114,78,98.7,"Diabetes, Asthma",Low,General Medicine
+P0541,87,Female,"Dizziness, Fever, Abdominal Pain",122,79,97.1,Kidney Disease,Low,General Medicine
+P0542,59,Male,"Sore Throat, Cough",121,78,99.1,Asthma,Low,General Medicine
+P0543,22,Other,"Fever, Sore Throat, Back Pain",96,82,101.0,None,Medium,General Medicine
+P0544,86,Female,"Vomiting, Chest Pain",164,89,97.7,None,High,Cardiology
+P0545,3,Other,"Back Pain, Numbness, Vomiting",98,66,96.5,Kidney Disease,Low,Neurology
+P0546,44,Male,"Back Pain, Dizziness",102,82,100.3,"Diabetes, Heart Disease",Medium,General Medicine
+P0547,1,Female,Fatigue,98,83,101.5,Hypertension,Medium,General Medicine
+P0548,11,Male,"Fever, Vomiting, Cough",101,89,97.4,"Heart Disease, Thyroid Disorder",Low,General Medicine
+P0549,82,Female,"Cough, Fatigue",142,109,96.6,"None, Hypertension",Medium,General Medicine
+P0550,85,Male,"Blurred Vision, Headache",129,81,98.3,Anemia,Low,Neurology
+P0551,36,Female,"Abdominal Pain, Shortness of Breath, Fatigue",153,103,97.5,Hypertension,High,Pulmonology
+P0552,21,Male,"Fever, Shortness of Breath",80,84,100.8,"None, Hypertension",Medium,Pulmonology
+P0553,5,Male,"Vomiting, Back Pain, Headache",106,93,98.2,Asthma,Low,General Medicine
+P0554,48,Other,Vomiting,96,83,97.9,"None, Diabetes",Low,General Medicine
+P0555,70,Other,"Cough, Fever",84,98,97.0,Thyroid Disorder,Low,General Medicine
+P0556,88,Other,"Abdominal Pain, Back Pain",106,111,96.7,Diabetes,Medium,General Medicine
+P0557,64,Other,Numbness,174,75,100.2,"Diabetes, Heart Disease",High,Neurology
+P0558,4,Other,Vomiting,113,78,100.5,Asthma,Medium,General Medicine
+P0559,73,Female,"Dizziness, Vomiting",92,94,97.2,"Kidney Disease, Asthma",Low,General Medicine
+P0560,67,Female,Cough,98,88,95.0,Hypertension,Low,General Medicine
+P0561,61,Other,Chest Pain,159,76,99.8,Hypertension,High,Cardiology
+P0562,42,Female,"Dizziness, Vomiting",142,101,100.4,Kidney Disease,Medium,General Medicine
+P0563,76,Male,"Headache, Abdominal Pain",107,92,99.8,"Diabetes, None",Low,General Medicine
+P0564,71,Male,"Headache, Back Pain, Blurred Vision",130,98,96.2,Asthma,Low,Neurology
+P0565,15,Female,Cough,128,71,99.4,Kidney Disease,Low,General Medicine
+P0566,1,Female,"Fever, Numbness, Headache",143,85,100.0,"Hypertension, None",Medium,Neurology
+P0567,23,Female,"Fatigue, Back Pain",103,79,95.9,Diabetes,Low,General Medicine
+P0568,75,Female,Sore Throat,87,68,97.9,Diabetes,Low,General Medicine
+P0569,60,Male,Sore Throat,154,90,99.0,Hypertension,Medium,General Medicine
+P0570,17,Male,"Dizziness, Numbness",135,101,98.4,Heart Disease,Medium,Neurology
+P0571,16,Male,Cough,96,78,99.9,Anemia,Low,General Medicine
+P0572,31,Male,Sore Throat,144,68,97.0,"Diabetes, None",Medium,General Medicine
+P0573,8,Female,Chest Pain,104,72,100.1,"Thyroid Disorder, Asthma",Medium,Cardiology
+P0574,17,Male,"Numbness, Vomiting",125,81,98.4,Kidney Disease,Low,Neurology
+P0575,21,Male,Headache,111,59,97.3,"Anemia, Diabetes",Low,General Medicine
+P0576,55,Male,"Blurred Vision, Sore Throat, Shortness of Breath",131,45,98.7,"Anemia, Asthma",Low,Neurology
+P0577,10,Other,"Fever, Cough",124,99,99.0,"Thyroid Disorder, Diabetes",Low,General Medicine
+P0578,50,Female,Numbness,164,92,99.2,None,High,Neurology
+P0579,24,Female,"Dizziness, Abdominal Pain, Fatigue",130,53,97.4,"Kidney Disease, Heart Disease",Low,General Medicine
+P0580,31,Other,"Vomiting, Headache",151,69,97.8,None,Medium,General Medicine
+P0581,75,Female,"Shortness of Breath, Fever, Headache",106,56,99.5,Anemia,Low,Pulmonology
+P0582,86,Other,"Sore Throat, Blurred Vision",138,75,98.6,Hypertension,Low,Neurology
+P0583,50,Male,Numbness,80,73,98.7,Heart Disease,Low,Neurology
+P0584,34,Other,"Fever, Shortness of Breath, Blurred Vision",98,95,97.4,"Kidney Disease, Thyroid Disorder",Low,Neurology
+P0585,15,Male,Shortness of Breath,117,89,99.3,"Kidney Disease, Heart Disease",Low,Pulmonology
+P0586,51,Male,"Back Pain, Dizziness, Blurred Vision",116,83,97.5,Asthma,Low,Neurology
+P0587,29,Female,"Headache, Chest Pain, Abdominal Pain",151,60,99.2,Diabetes,High,Cardiology
+P0588,13,Male,Blurred Vision,103,71,97.2,None,Low,Neurology
+P0589,11,Other,"Fever, Dizziness",121,82,97.5,Hypertension,Low,General Medicine
+P0590,83,Female,"Chest Pain, Dizziness, Fever",113,79,96.9,Hypertension,Low,Cardiology
+P0591,28,Other,"Chest Pain, Cough, Fatigue",118,96,98.8,"Diabetes, Hypertension",Low,Cardiology
+P0592,71,Other,"Vomiting, Blurred Vision, Cough",103,73,100.6,"Heart Disease, Hypertension",Medium,Neurology
+P0593,13,Male,Back Pain,152,70,99.8,"Anemia, Kidney Disease",Medium,General Medicine
+P0594,54,Female,Back Pain,113,75,98.9,"Asthma, Kidney Disease",Low,General Medicine
+P0595,87,Other,Vomiting,88,92,99.0,"Heart Disease, Diabetes",Low,General Medicine
+P0596,18,Male,"Fever, Back Pain, Blurred Vision",101,82,97.9,"None, Diabetes",Low,Neurology
+P0597,54,Other,"Sore Throat, Blurred Vision",123,77,97.1,Diabetes,Low,Neurology
+P0598,57,Female,Dizziness,91,87,99.3,Asthma,Low,General Medicine
+P0599,53,Female,"Chest Pain, Numbness",134,72,98.1,Kidney Disease,Low,Cardiology
+P0600,25,Female,Headache,100,67,100.2,Asthma,Medium,General Medicine
+P0601,12,Other,Dizziness,118,80,99.2,"Diabetes, Kidney Disease",Low,General Medicine
+P0602,60,Male,Vomiting,119,101,97.6,"Thyroid Disorder, Diabetes",Medium,General Medicine
+P0603,28,Female,"Vomiting, Dizziness",102,69,97.3,"Diabetes, Thyroid Disorder",Low,General Medicine
+P0604,47,Female,"Numbness, Sore Throat, Shortness of Breath",122,76,98.7,Anemia,Low,Neurology
+P0605,6,Male,Headache,82,69,100.3,Kidney Disease,Medium,General Medicine
+P0606,7,Female,Cough,103,61,96.2,"Hypertension, Asthma",Low,General Medicine
+P0607,16,Male,"Cough, Fatigue, Sore Throat",157,91,99.9,"Anemia, Kidney Disease",Medium,General Medicine
+P0608,51,Male,"Numbness, Chest Pain",122,90,99.4,"Hypertension, None",Low,Cardiology
+P0609,72,Male,"Shortness of Breath, Sore Throat",110,74,98.8,"Heart Disease, Kidney Disease",Low,Pulmonology
+P0610,29,Female,"Shortness of Breath, Cough",131,78,95.9,Thyroid Disorder,Low,Pulmonology
+P0611,79,Other,"Abdominal Pain, Chest Pain, Fever",123,73,98.6,"None, Asthma",Low,Cardiology
+P0612,5,Male,"Numbness, Sore Throat",120,111,99.0,"Asthma, None",Medium,Neurology
+P0613,75,Male,Chest Pain,94,70,97.8,"Diabetes, Asthma",Low,Cardiology
+P0614,26,Male,"Sore Throat, Vomiting",113,73,99.7,"Anemia, Kidney Disease",Low,General Medicine
+P0615,83,Female,Numbness,126,74,96.5,"Hypertension, Anemia",Low,Neurology
+P0616,28,Female,"Chest Pain, Abdominal Pain",151,96,99.2,Heart Disease,High,Cardiology
+P0617,47,Female,"Headache, Shortness of Breath",115,86,99.9,"None, Diabetes",Low,Pulmonology
+P0618,46,Other,"Cough, Sore Throat, Numbness",118,63,98.2,"Thyroid Disorder, Anemia",Low,Neurology
+P0619,50,Other,Fatigue,140,68,99.1,Thyroid Disorder,Low,General Medicine
+P0620,46,Other,"Fatigue, Numbness",117,77,97.9,"Asthma, Anemia",Low,Neurology
+P0621,86,Female,Vomiting,125,103,98.1,Hypertension,Medium,General Medicine
+P0622,3,Male,"Chest Pain, Sore Throat",93,76,96.6,Asthma,Low,Cardiology
+P0623,44,Male,Vomiting,126,90,95.0,Thyroid Disorder,Low,General Medicine
+P0624,70,Male,"Chest Pain, Blurred Vision, Headache",131,84,97.2,"Diabetes, None",Low,Cardiology
+P0625,48,Female,"Vomiting, Fatigue, Dizziness",130,78,96.1,"Anemia, Thyroid Disorder",Low,General Medicine
+P0626,89,Male,"Blurred Vision, Sore Throat, Fatigue",122,67,100.4,"Diabetes, Asthma",Medium,Neurology
+P0627,17,Male,Blurred Vision,120,88,98.3,Diabetes,Low,Neurology
+P0628,65,Other,Sore Throat,95,102,98.1,"Kidney Disease, Asthma",Medium,General Medicine
+P0629,84,Female,"Numbness, Abdominal Pain",149,85,97.9,"None, Diabetes",Medium,Neurology
+P0630,74,Female,"Chest Pain, Blurred Vision",119,71,100.3,"None, Asthma",Medium,Cardiology
+P0631,28,Female,"Shortness of Breath, Fever, Abdominal Pain",132,60,97.4,"Kidney Disease, None",Low,Pulmonology
+P0632,66,Female,"Headache, Sore Throat",98,100,98.5,"Diabetes, Thyroid Disorder",Low,General Medicine
+P0633,22,Male,Headache,111,79,101.5,"Kidney Disease, Hypertension",Medium,General Medicine
+P0634,10,Other,"Blurred Vision, Numbness",115,132,96.2,Asthma,High,Neurology
+P0635,71,Female,Vomiting,93,55,98.8,"Kidney Disease, Thyroid Disorder",Low,General Medicine
+P0636,78,Male,"Sore Throat, Chest Pain, Cough",123,98,95.5,"Thyroid Disorder, Diabetes",Low,Cardiology
+P0637,82,Other,"Fever, Chest Pain, Shortness of Breath",95,90,98.4,None,Low,Cardiology
+P0638,75,Male,Abdominal Pain,100,67,99.5,Kidney Disease,Low,General Medicine
+P0639,65,Other,Headache,124,77,96.1,"Anemia, Heart Disease",Low,General Medicine
+P0640,51,Female,"Cough, Numbness, Fever",159,52,97.3,Kidney Disease,Medium,Neurology
+P0641,19,Female,"Abdominal Pain, Chest Pain, Sore Throat",115,63,100.5,"Kidney Disease, Diabetes",Medium,Cardiology
+P0642,23,Female,"Back Pain, Cough, Headache",109,74,95.0,Thyroid Disorder,Low,General Medicine
+P0643,8,Male,Blurred Vision,108,64,97.9,Asthma,Low,Neurology
+P0644,68,Other,Numbness,128,90,97.9,Heart Disease,Low,Neurology
+P0645,1,Other,"Fatigue, Fever",145,74,97.7,Anemia,Medium,General Medicine
+P0646,24,Male,"Chest Pain, Blurred Vision, Fever",139,95,97.7,Heart Disease,Low,Cardiology
+P0647,34,Other,"Back Pain, Sore Throat",122,95,97.5,"Thyroid Disorder, Asthma",Low,General Medicine
+P0648,69,Female,"Headache, Shortness of Breath",86,94,95.1,"Heart Disease, Kidney Disease",Low,Pulmonology
+P0649,41,Other,"Vomiting, Blurred Vision, Cough",106,80,96.8,Kidney Disease,Low,Neurology
+P0650,3,Other,"Blurred Vision, Sore Throat, Headache",98,71,97.0,"Diabetes, Asthma",Low,Neurology
+P0651,36,Male,"Headache, Numbness",133,86,95.8,"Heart Disease, Hypertension",Low,Neurology
+P0652,62,Other,"Numbness, Headache, Shortness of Breath",106,71,99.5,Asthma,Low,Neurology
+P0653,51,Male,"Vomiting, Numbness, Dizziness",110,62,100.6,None,Medium,Neurology
+P0654,16,Other,"Headache, Sore Throat",85,81,97.2,"Thyroid Disorder, Asthma",Low,General Medicine
+P0655,74,Other,Blurred Vision,85,81,97.9,Kidney Disease,Low,Neurology
+P0656,17,Other,"Shortness of Breath, Numbness, Fatigue",166,56,99.6,"Kidney Disease, Heart Disease",High,Neurology
+P0657,25,Female,Numbness,123,64,99.5,Heart Disease,Low,Neurology
+P0658,51,Male,"Chest Pain, Back Pain",139,89,98.1,"Hypertension, Kidney Disease",Low,Cardiology
+P0659,88,Female,"Cough, Shortness of Breath, Dizziness",112,74,97.8,Heart Disease,Low,Pulmonology
+P0660,34,Female,"Dizziness, Headache",138,71,99.2,"Anemia, Thyroid Disorder",Low,General Medicine
+P0661,13,Male,"Fever, Numbness",132,63,99.5,Anemia,Low,Neurology
+P0662,55,Male,"Cough, Numbness, Vomiting",142,51,99.1,"Thyroid Disorder, None",Medium,Neurology
+P0663,15,Male,Shortness of Breath,80,82,97.8,"Thyroid Disorder, Heart Disease",Low,Pulmonology
+P0664,78,Female,Dizziness,125,57,97.9,Diabetes,Low,General Medicine
+P0665,59,Female,"Numbness, Chest Pain",157,80,101.8,"None, Anemia",High,Cardiology
+P0666,65,Female,"Shortness of Breath, Chest Pain",158,77,95.5,Anemia,High,Cardiology
+P0667,13,Male,Blurred Vision,123,83,100.0,"Thyroid Disorder, Asthma",Low,Neurology
+P0668,2,Female,"Vomiting, Fever",149,85,99.6,Asthma,Medium,General Medicine
+P0669,72,Other,"Fever, Dizziness",133,59,100.2,None,Medium,General Medicine
+P0670,83,Other,Numbness,125,59,99.4,Asthma,Low,Neurology
+P0671,72,Other,"Headache, Chest Pain",121,70,96.9,Thyroid Disorder,Low,Cardiology
+P0672,27,Other,"Headache, Chest Pain, Cough",97,90,98.2,Heart Disease,Low,Cardiology
+P0673,5,Female,"Back Pain, Fatigue",107,103,97.6,"Thyroid Disorder, Kidney Disease",Medium,General Medicine
+P0674,19,Male,"Abdominal Pain, Dizziness",85,72,98.7,Hypertension,Low,General Medicine
+P0675,47,Female,Shortness of Breath,123,79,99.5,Hypertension,Low,Pulmonology
+P0676,87,Male,"Fever, Blurred Vision, Fatigue",137,74,96.4,Diabetes,Low,Neurology
+P0677,54,Female,"Numbness, Fever, Vomiting",128,77,99.0,"None, Heart Disease",Low,Neurology
+P0678,66,Male,"Cough, Numbness, Fever",119,102,97.5,Diabetes,Medium,Neurology
+P0679,84,Female,"Vomiting, Cough",83,66,96.2,"Anemia, Kidney Disease",Low,General Medicine
+P0680,10,Male,Back Pain,106,105,98.6,Heart Disease,Medium,General Medicine
+P0681,2,Female,"Cough, Numbness, Fatigue",138,60,98.5,"Hypertension, Asthma",Low,Neurology
+P0682,39,Male,"Back Pain, Blurred Vision, Cough",127,78,97.3,"Diabetes, Thyroid Disorder",Low,Neurology
+P0683,20,Male,"Shortness of Breath, Blurred Vision",153,100,96.5,Heart Disease,High,Neurology
+P0684,34,Other,Dizziness,136,66,100.6,"Heart Disease, Diabetes",Medium,General Medicine
+P0685,27,Male,"Abdominal Pain, Shortness of Breath, Sore Throat",143,95,96.0,"Asthma, None",High,Pulmonology
+P0686,59,Male,"Cough, Sore Throat, Blurred Vision",138,95,98.8,"Hypertension, None",Low,Neurology
+P0687,65,Other,Back Pain,117,64,96.5,Heart Disease,Low,General Medicine
+P0688,51,Other,Abdominal Pain,130,76,98.8,"Heart Disease, Asthma",Low,General Medicine
+P0689,22,Male,Chest Pain,91,101,98.6,Heart Disease,Medium,Cardiology
+P0690,45,Female,"Dizziness, Vomiting, Cough",109,57,99.2,None,Low,General Medicine
+P0691,36,Male,Numbness,135,101,97.2,Kidney Disease,Medium,Neurology
+P0692,38,Female,"Blurred Vision, Headache",133,67,98.2,Kidney Disease,Low,Neurology
+P0693,85,Female,Cough,117,92,97.7,"Thyroid Disorder, Asthma",Low,General Medicine
+P0694,73,Female,"Back Pain, Abdominal Pain",87,83,96.1,"Hypertension, None",Low,General Medicine
+P0695,41,Male,"Back Pain, Fever, Chest Pain",136,65,98.9,Thyroid Disorder,Low,Cardiology
+P0696,47,Other,"Sore Throat, Blurred Vision",131,78,98.0,"Hypertension, Heart Disease",Low,Neurology
+P0697,69,Female,"Blurred Vision, Fever",100,51,99.1,Anemia,Low,Neurology
+P0698,16,Female,Vomiting,93,86,99.1,"None, Anemia",Low,General Medicine
+P0699,19,Female,"Dizziness, Fever, Numbness",83,79,97.7,Kidney Disease,Low,Neurology
+P0700,65,Other,"Back Pain, Sore Throat, Blurred Vision",146,94,97.3,Thyroid Disorder,Medium,Neurology
+P0701,81,Other,"Shortness of Breath, Abdominal Pain, Dizziness",123,91,95.8,"Hypertension, Thyroid Disorder",Low,Pulmonology
+P0702,28,Other,"Fever, Sore Throat, Numbness",125,94,98.0,Anemia,Low,Neurology
+P0703,60,Female,Cough,119,99,96.7,"Kidney Disease, Diabetes",Low,General Medicine
+P0704,79,Female,"Fever, Fatigue",122,72,95.7,Thyroid Disorder,Low,General Medicine
+P0705,57,Female,Cough,127,60,97.2,"Anemia, Thyroid Disorder",Low,General Medicine
+P0706,88,Other,"Cough, Abdominal Pain",80,72,100.6,"Kidney Disease, None",Medium,General Medicine
+P0707,1,Female,"Numbness, Fever, Cough",149,81,99.6,"Thyroid Disorder, None",Medium,Neurology
+P0708,83,Other,"Fever, Cough, Blurred Vision",130,75,97.5,"Asthma, Kidney Disease",Low,Neurology
+P0709,68,Other,"Dizziness, Sore Throat",117,91,96.0,Asthma,Low,General Medicine
+P0710,61,Female,"Fatigue, Blurred Vision",127,95,97.7,"Kidney Disease, Anemia",Low,Neurology
+P0711,25,Female,Cough,110,88,99.2,None,Low,General Medicine
+P0712,49,Female,"Numbness, Headache",132,90,98.4,"Diabetes, None",Low,Neurology
+P0713,85,Male,"Chest Pain, Back Pain",110,95,100.6,"Diabetes, Hypertension",Medium,Cardiology
+P0714,87,Other,Shortness of Breath,122,82,98.6,Thyroid Disorder,Low,Pulmonology
+P0715,67,Male,"Sore Throat, Shortness of Breath",115,79,97.8,"Diabetes, Thyroid Disorder",Low,Pulmonology
+P0716,87,Female,Numbness,83,88,97.0,Anemia,Low,Neurology
+P0717,23,Female,"Blurred Vision, Fatigue, Chest Pain",151,73,98.5,"None, Heart Disease",High,Cardiology
+P0718,18,Other,Fatigue,142,85,95.6,"Anemia, Heart Disease",Medium,General Medicine
+P0719,30,Male,"Blurred Vision, Chest Pain, Back Pain",114,86,97.2,Thyroid Disorder,Low,Cardiology
+P0720,36,Other,"Blurred Vision, Dizziness, Fatigue",114,76,97.9,"Thyroid Disorder, Heart Disease",Low,Neurology
+P0721,11,Other,Headache,92,71,99.9,"Kidney Disease, Hypertension",Low,General Medicine
+P0722,47,Female,Chest Pain,161,88,98.9,"Heart Disease, Thyroid Disorder",High,Cardiology
+P0723,67,Other,"Dizziness, Back Pain, Fatigue",141,95,98.4,Asthma,Medium,General Medicine
+P0724,13,Male,"Back Pain, Headache, Numbness",94,84,99.8,"Hypertension, Kidney Disease",Low,Neurology
+P0725,48,Other,Fatigue,122,84,99.5,"Diabetes, Thyroid Disorder",Low,General Medicine
+P0726,39,Female,"Abdominal Pain, Blurred Vision, Back Pain",119,86,97.2,"Heart Disease, Thyroid Disorder",Low,Neurology
+P0727,71,Female,Fatigue,125,73,100.0,None,Low,General Medicine
+P0728,53,Female,Fever,134,88,100.4,Asthma,Medium,General Medicine
+P0729,43,Female,Headache,119,68,101.4,"Hypertension, Thyroid Disorder",Medium,General Medicine
+P0730,32,Male,"Sore Throat, Headache, Shortness of Breath",139,89,98.9,Kidney Disease,Low,Pulmonology
+P0731,54,Female,Blurred Vision,125,106,99.0,Thyroid Disorder,Medium,Neurology
+P0732,80,Male,"Sore Throat, Back Pain, Headache",127,74,98.0,Thyroid Disorder,Low,General Medicine
+P0733,71,Female,"Sore Throat, Numbness",93,76,97.2,"None, Anemia",Low,Neurology
+P0734,30,Other,"Shortness of Breath, Blurred Vision",118,66,97.4,"Asthma, Kidney Disease",Low,Neurology
+P0735,8,Other,"Numbness, Dizziness, Blurred Vision",114,94,99.1,Asthma,Low,Neurology
+P0736,57,Female,"Chest Pain, Numbness",120,79,98.9,Hypertension,Low,Cardiology
+P0737,77,Male,"Fatigue, Cough, Vomiting",114,100,96.8,Thyroid Disorder,Low,General Medicine
+P0738,54,Female,"Headache, Chest Pain, Back Pain",106,90,100.6,"None, Hypertension",Medium,Cardiology
+P0739,55,Female,"Chest Pain, Fever, Sore Throat",107,46,99.7,"None, Thyroid Disorder",Low,Cardiology
+P0740,30,Other,"Numbness, Headache, Abdominal Pain",145,89,96.7,"Diabetes, Thyroid Disorder",Medium,Neurology
+P0741,49,Other,"Fatigue, Shortness of Breath",148,59,98.6,Diabetes,High,Pulmonology
+P0742,73,Other,Vomiting,108,100,99.0,"Diabetes, Hypertension",Low,General Medicine
+P0743,45,Male,Numbness,146,63,99.4,"Kidney Disease, Hypertension",Medium,Neurology
+P0744,59,Female,Sore Throat,101,73,97.7,"None, Anemia",Low,General Medicine
+P0745,6,Other,"Abdominal Pain, Shortness of Breath",127,83,99.2,None,Low,Pulmonology
+P0746,64,Other,"Vomiting, Cough",148,87,99.0,"Heart Disease, Anemia",Medium,General Medicine
+P0747,86,Other,"Fever, Fatigue",104,95,100.9,"Anemia, Asthma",Medium,General Medicine
+P0748,16,Male,"Numbness, Shortness of Breath",106,70,96.9,"Diabetes, None",Low,Neurology
+P0749,40,Male,"Fatigue, Fever, Numbness",140,84,99.0,Asthma,Low,Neurology
+P0750,11,Other,"Sore Throat, Shortness of Breath, Numbness",133,66,100.7,"Diabetes, Anemia",Medium,Neurology
+P0751,23,Other,"Back Pain, Vomiting, Numbness",142,88,99.8,Hypertension,Medium,Neurology
+P0752,67,Male,"Back Pain, Dizziness",98,82,99.2,Diabetes,Low,General Medicine
+P0753,1,Male,Chest Pain,145,81,95.8,"Diabetes, Heart Disease",High,Cardiology
+P0754,27,Male,"Vomiting, Sore Throat",114,57,99.3,"Thyroid Disorder, Asthma",Low,General Medicine
+P0755,53,Female,Vomiting,131,89,97.4,None,Low,General Medicine
+P0756,84,Other,"Blurred Vision, Cough, Sore Throat",131,91,99.6,Diabetes,Low,Neurology
+P0757,33,Female,"Cough, Headache, Numbness",110,79,97.9,"Diabetes, Hypertension",Low,Neurology
+P0758,5,Female,"Vomiting, Numbness",129,94,98.9,Anemia,Low,Neurology
+P0759,48,Male,"Shortness of Breath, Chest Pain, Vomiting",133,75,97.9,"Hypertension, Anemia",Low,Cardiology
+P0760,29,Other,"Numbness, Dizziness, Fever",134,108,97.3,Diabetes,Medium,Neurology
+P0761,18,Male,Blurred Vision,110,89,97.3,"Diabetes, Hypertension",Low,Neurology
+P0762,48,Male,"Back Pain, Sore Throat, Dizziness",122,116,96.6,Thyroid Disorder,Medium,General Medicine
+P0763,16,Other,"Chest Pain, Sore Throat, Back Pain",99,76,98.3,Heart Disease,Low,Cardiology
+P0764,54,Male,Chest Pain,117,52,99.4,Anemia,Low,Cardiology
+P0765,48,Other,"Cough, Headache, Numbness",99,96,98.5,Heart Disease,Low,Neurology
+P0766,58,Male,Back Pain,97,110,99.9,"Kidney Disease, Hypertension",Medium,General Medicine
+P0767,85,Male,"Numbness, Shortness of Breath, Cough",86,57,98.7,"Diabetes, Anemia",Low,Neurology
+P0768,19,Female,"Abdominal Pain, Dizziness",107,106,97.7,"Hypertension, Heart Disease",Medium,General Medicine
+P0769,43,Other,"Sore Throat, Dizziness",153,108,97.9,"Hypertension, None",Medium,General Medicine
+P0770,55,Female,Sore Throat,139,102,100.4,Thyroid Disorder,Medium,General Medicine
+P0771,5,Female,"Chest Pain, Numbness",142,88,99.4,"Anemia, Asthma",High,Cardiology
+P0772,75,Female,"Sore Throat, Headache",151,94,97.9,"Diabetes, Anemia",Medium,General Medicine
+P0773,87,Other,"Cough, Headache, Chest Pain",124,89,98.6,Heart Disease,Low,Cardiology
+P0774,89,Other,"Cough, Back Pain, Sore Throat",110,60,99.7,None,Low,General Medicine
+P0775,83,Other,"Vomiting, Blurred Vision, Shortness of Breath",135,88,96.4,Heart Disease,Low,Neurology
+P0776,22,Other,"Abdominal Pain, Numbness, Chest Pain",112,109,97.6,"Thyroid Disorder, Diabetes",Medium,Cardiology
+P0777,46,Other,"Headache, Chest Pain, Abdominal Pain",130,99,99.7,Thyroid Disorder,Low,Cardiology
+P0778,20,Female,"Fever, Numbness, Shortness of Breath",129,80,99.2,Hypertension,Low,Neurology
+P0779,56,Female,Chest Pain,143,84,97.4,Anemia,High,Cardiology
+P0780,75,Female,Shortness of Breath,124,53,100.1,"Asthma, None",Medium,Pulmonology
+P0781,22,Female,"Shortness of Breath, Fever",112,82,98.6,Kidney Disease,Low,Pulmonology
+P0782,84,Female,"Abdominal Pain, Fever",117,63,99.3,Kidney Disease,Low,General Medicine
+P0783,45,Male,"Fatigue, Numbness, Headache",144,72,97.5,"Hypertension, Asthma",Medium,Neurology
+P0784,81,Other,"Dizziness, Blurred Vision",107,84,98.5,Heart Disease,Low,Neurology
+P0785,8,Female,Fatigue,112,67,95.4,"Kidney Disease, Thyroid Disorder",Low,General Medicine
+P0786,17,Female,"Sore Throat, Abdominal Pain",94,76,97.3,Hypertension,Low,General Medicine
+P0787,50,Female,Shortness of Breath,96,75,97.4,Heart Disease,Low,Pulmonology
+P0788,88,Male,Chest Pain,119,54,97.7,Kidney Disease,Low,Cardiology
+P0789,11,Other,"Cough, Numbness, Shortness of Breath",95,64,97.7,"Kidney Disease, Anemia",Low,Neurology
+P0790,39,Male,"Numbness, Abdominal Pain",112,58,96.5,"Asthma, Heart Disease",Low,Neurology
+P0791,13,Male,"Vomiting, Fever, Shortness of Breath",112,84,99.7,Hypertension,Low,Pulmonology
+P0792,87,Other,"Chest Pain, Sore Throat, Numbness",112,92,100.7,Hypertension,Medium,Cardiology
+P0793,62,Male,Headache,124,64,96.7,Thyroid Disorder,Low,General Medicine
+P0794,44,Other,"Numbness, Fever, Sore Throat",120,78,95.7,"Diabetes, Anemia",Low,Neurology
+P0795,17,Female,"Abdominal Pain, Sore Throat, Chest Pain",126,79,100.7,Thyroid Disorder,Medium,Cardiology
+P0796,53,Other,Sore Throat,105,62,95.0,Heart Disease,Low,General Medicine
+P0797,13,Male,"Numbness, Dizziness, Abdominal Pain",132,49,98.7,Asthma,Low,Neurology
+P0798,32,Female,"Chest Pain, Cough",99,75,99.7,Asthma,Low,Cardiology
+P0799,85,Other,"Numbness, Vomiting, Chest Pain",154,78,95.0,Hypertension,High,Cardiology
+P0800,83,Female,"Blurred Vision, Fever, Fatigue",90,67,98.9,Diabetes,Low,Neurology
+P0801,48,Female,"Chest Pain, Blurred Vision, Fatigue",85,66,100.7,Thyroid Disorder,Medium,Cardiology
+P0802,62,Other,"Dizziness, Fever",114,80,100.4,"Asthma, Thyroid Disorder",Medium,General Medicine
+P0803,77,Female,"Dizziness, Blurred Vision",112,120,96.6,Thyroid Disorder,Medium,Neurology
+P0804,39,Male,"Abdominal Pain, Shortness of Breath",133,81,98.7,Heart Disease,Low,Pulmonology
+P0805,59,Other,"Vomiting, Headache, Shortness of Breath",124,63,97.5,None,Low,Pulmonology
+P0806,28,Other,"Cough, Fatigue, Fever",103,45,98.0,"Asthma, Kidney Disease",Low,General Medicine
+P0807,80,Female,"Dizziness, Cough",127,77,98.5,Thyroid Disorder,Low,General Medicine
+P0808,57,Other,"Headache, Sore Throat, Fatigue",128,69,99.6,"Kidney Disease, Heart Disease",Low,General Medicine
+P0809,10,Female,"Vomiting, Shortness of Breath, Sore Throat",105,76,100.2,"Hypertension, Anemia",Medium,Pulmonology
+P0810,69,Other,"Abdominal Pain, Headache, Back Pain",123,87,96.9,"Thyroid Disorder, Kidney Disease",Low,General Medicine
+P0811,41,Male,"Cough, Back Pain, Shortness of Breath",122,54,102.2,"Hypertension, None",High,Pulmonology
+P0812,4,Male,"Vomiting, Dizziness, Fatigue",132,88,100.2,Hypertension,Medium,General Medicine
+P0813,77,Female,"Fever, Cough, Chest Pain",104,66,96.3,"Thyroid Disorder, None",Low,Cardiology
+P0814,24,Male,"Shortness of Breath, Dizziness",124,92,98.4,None,Low,Pulmonology
+P0815,23,Other,"Vomiting, Blurred Vision",101,69,98.8,"None, Thyroid Disorder",Low,Neurology
+P0816,39,Male,"Abdominal Pain, Sore Throat, Fever",116,92,100.7,Heart Disease,Medium,General Medicine
+P0817,82,Male,Sore Throat,157,81,98.1,Hypertension,Medium,General Medicine
+P0818,82,Other,Dizziness,132,71,96.7,None,Low,General Medicine
+P0819,40,Male,Headache,134,63,100.7,"Kidney Disease, Anemia",Medium,General Medicine
+P0820,53,Female,"Blurred Vision, Shortness of Breath",116,48,101.0,Diabetes,Medium,Neurology
+P0821,54,Male,"Headache, Back Pain, Fatigue",104,90,97.8,"Kidney Disease, Thyroid Disorder",Low,General Medicine
+P0822,78,Female,Blurred Vision,80,83,99.1,Anemia,Low,Neurology
+P0823,42,Female,"Fever, Headache, Chest Pain",148,70,98.9,"Diabetes, Heart Disease",High,Cardiology
+P0824,32,Male,"Headache, Dizziness, Cough",111,96,98.7,"Heart Disease, Kidney Disease",Low,General Medicine
+P0825,40,Female,"Blurred Vision, Abdominal Pain",116,90,98.5,Kidney Disease,Low,Neurology
+P0826,49,Female,"Abdominal Pain, Blurred Vision, Fever",145,69,96.6,"Diabetes, Hypertension",Medium,Neurology
+P0827,49,Male,"Numbness, Shortness of Breath",95,64,98.6,Kidney Disease,Low,Neurology
+P0828,17,Female,"Fatigue, Sore Throat",111,63,99.2,Heart Disease,Low,General Medicine
+P0829,28,Male,"Cough, Vomiting",126,88,97.0,"Diabetes, Heart Disease",Low,General Medicine
+P0830,58,Male,"Dizziness, Sore Throat",100,109,97.7,Heart Disease,Medium,General Medicine
+P0831,81,Male,"Numbness, Shortness of Breath, Abdominal Pain",137,102,97.5,Asthma,Medium,Neurology
+P0832,28,Other,Headache,115,67,96.5,Asthma,Low,General Medicine
+P0833,40,Male,Blurred Vision,126,80,98.3,"Hypertension, Thyroid Disorder",Low,Neurology
+P0834,38,Male,Cough,134,84,96.7,"None, Thyroid Disorder",Low,General Medicine
+P0835,88,Other,Abdominal Pain,107,50,98.8,"Kidney Disease, Asthma",Low,General Medicine
+P0836,10,Other,"Abdominal Pain, Chest Pain",134,71,97.1,"Thyroid Disorder, Diabetes",Low,Cardiology
+P0837,67,Other,Fever,101,106,99.8,"Anemia, Heart Disease",Medium,General Medicine
+P0838,84,Male,"Dizziness, Vomiting, Numbness",115,67,99.9,Anemia,Low,Neurology
+P0839,48,Male,"Fatigue, Abdominal Pain, Dizziness",97,93,97.6,None,Low,General Medicine
+P0840,21,Other,Vomiting,110,98,98.0,Kidney Disease,Low,General Medicine
+P0841,86,Female,"Headache, Chest Pain, Fatigue",118,60,98.9,"Asthma, Hypertension",Low,Cardiology
+P0842,52,Female,"Dizziness, Sore Throat, Chest Pain",105,91,100.5,"Thyroid Disorder, Diabetes",Medium,Cardiology
+P0843,88,Female,"Sore Throat, Dizziness, Back Pain",122,64,98.0,"Heart Disease, Asthma",Low,General Medicine
+P0844,47,Male,"Chest Pain, Blurred Vision, Numbness",134,80,98.0,Diabetes,Low,Cardiology
+P0845,21,Other,"Sore Throat, Shortness of Breath",125,99,99.5,"Thyroid Disorder, Diabetes",Low,Pulmonology
+P0846,10,Male,"Chest Pain, Abdominal Pain, Fever",125,87,99.2,Thyroid Disorder,Low,Cardiology
+P0847,5,Female,Numbness,105,76,96.3,"Anemia, Hypertension",Low,Neurology
+P0848,59,Female,"Blurred Vision, Fever, Vomiting",128,102,99.3,Hypertension,Medium,Neurology
+P0849,60,Male,Headache,139,84,99.1,"Diabetes, Asthma",Low,General Medicine
+P0850,77,Other,"Headache, Dizziness",113,53,99.3,"Heart Disease, Hypertension",Low,General Medicine
+P0851,61,Male,"Cough, Dizziness",110,57,97.4,Hypertension,Low,General Medicine
+P0852,34,Female,"Dizziness, Numbness",135,73,101.2,"Anemia, None",Medium,Neurology
+P0853,40,Female,"Headache, Abdominal Pain, Numbness",120,82,99.0,Hypertension,Low,Neurology
+P0854,42,Other,"Vomiting, Numbness",104,86,99.1,"Diabetes, None",Low,Neurology
+P0855,38,Male,"Shortness of Breath, Dizziness",122,82,96.6,"Heart Disease, Kidney Disease",Low,Pulmonology
+P0856,38,Female,"Numbness, Vomiting, Headache",123,57,95.0,"Kidney Disease, Anemia",Low,Neurology
+P0857,6,Other,"Abdominal Pain, Vomiting, Chest Pain",94,84,98.7,None,Low,Cardiology
+P0858,27,Male,"Shortness of Breath, Numbness, Headache",98,69,99.7,Asthma,Low,Neurology
+P0859,35,Male,"Cough, Sore Throat",117,68,99.4,Anemia,Low,General Medicine
+P0860,20,Other,Fever,122,91,96.5,"Diabetes, None",Low,General Medicine
+P0861,18,Female,"Chest Pain, Cough, Numbness",130,76,97.7,"Heart Disease, Diabetes",Low,Cardiology
+P0862,44,Male,"Headache, Abdominal Pain, Numbness",130,84,97.0,Hypertension,Low,Neurology
+P0863,35,Other,Fever,115,70,95.1,Kidney Disease,Low,General Medicine
+P0864,48,Female,"Abdominal Pain, Fatigue",142,78,98.0,"Anemia, Diabetes",Medium,General Medicine
+P0865,17,Other,"Chest Pain, Blurred Vision, Back Pain",151,74,101.9,"Thyroid Disorder, Heart Disease",High,Cardiology
+P0866,37,Other,"Fatigue, Headache, Dizziness",159,77,97.4,"Asthma, Thyroid Disorder",Medium,General Medicine
+P0867,68,Male,"Headache, Dizziness",110,80,98.5,"Heart Disease, Diabetes",Low,General Medicine
+P0868,66,Female,Fever,89,57,98.9,Kidney Disease,Low,General Medicine
+P0869,24,Female,"Fatigue, Fever",137,72,98.3,"Anemia, Hypertension",Low,General Medicine
+P0870,57,Male,"Sore Throat, Headache",107,72,98.0,None,Low,General Medicine
+P0871,18,Other,"Shortness of Breath, Vomiting",96,48,98.9,"Thyroid Disorder, Diabetes",Low,Pulmonology
+P0872,6,Male,"Back Pain, Numbness, Vomiting",135,83,97.8,"Asthma, Hypertension",Low,Neurology
+P0873,6,Male,"Numbness, Shortness of Breath",133,72,101.9,"Heart Disease, Kidney Disease",Medium,Neurology
+P0874,74,Other,"Sore Throat, Headache, Vomiting",80,52,99.5,Diabetes,Low,General Medicine
+P0875,63,Male,Headache,150,69,100.4,Anemia,Medium,General Medicine
+P0876,70,Other,"Headache, Back Pain",96,63,98.1,"Asthma, Hypertension",Low,General Medicine
+P0877,22,Male,Fever,105,92,100.9,Hypertension,Medium,General Medicine
+P0878,18,Male,"Headache, Chest Pain",141,86,96.7,"None, Diabetes",High,Cardiology
+P0879,47,Male,Fever,117,45,98.7,"Asthma, Hypertension",Low,General Medicine
+P0880,25,Female,"Sore Throat, Abdominal Pain",98,89,99.7,"Anemia, Kidney Disease",Low,General Medicine
+P0881,58,Male,"Cough, Chest Pain",141,71,97.5,Heart Disease,High,Cardiology
+P0882,75,Female,Fatigue,115,87,97.9,"Hypertension, Diabetes",Low,General Medicine
+P0883,76,Female,"Fever, Cough",112,59,97.4,Thyroid Disorder,Low,General Medicine
+P0884,48,Female,Back Pain,140,65,100.5,Asthma,Medium,General Medicine
+P0885,4,Female,"Sore Throat, Cough, Fatigue",120,86,99.8,Anemia,Low,General Medicine
+P0886,72,Female,"Headache, Dizziness, Chest Pain",99,76,99.6,Diabetes,Low,Cardiology
+P0887,46,Female,"Numbness, Headache",96,75,97.4,Kidney Disease,Low,Neurology
+P0888,36,Male,"Shortness of Breath, Cough, Sore Throat",98,78,97.1,"Kidney Disease, None",Low,Pulmonology
+P0889,47,Male,"Blurred Vision, Cough",133,68,98.4,"Asthma, None",Low,Neurology
+P0890,37,Male,"Sore Throat, Back Pain, Abdominal Pain",106,78,101.1,Kidney Disease,Medium,General Medicine
+P0891,47,Male,Chest Pain,95,81,100.4,"Diabetes, Kidney Disease",Medium,Cardiology
+P0892,27,Other,"Sore Throat, Numbness",126,81,99.7,None,Low,Neurology
+P0893,25,Female,"Chest Pain, Back Pain, Fatigue",103,59,100.9,Hypertension,Medium,Cardiology
+P0894,69,Female,Dizziness,102,84,100.2,"Anemia, Kidney Disease",Medium,General Medicine
+P0895,19,Male,Back Pain,101,89,96.4,"Kidney Disease, Anemia",Low,General Medicine
+P0896,22,Male,"Fever, Abdominal Pain",135,61,96.8,"Heart Disease, Anemia",Low,General Medicine
+P0897,73,Other,"Shortness of Breath, Blurred Vision",110,58,99.5,Kidney Disease,Low,Neurology
+P0898,57,Female,"Abdominal Pain, Headache, Blurred Vision",97,82,96.7,Diabetes,Low,Neurology
+P0899,50,Other,Abdominal Pain,97,75,97.2,"Heart Disease, Anemia",Low,General Medicine
+P0900,58,Female,"Fever, Numbness",146,79,97.7,"Hypertension, None",Medium,Neurology
+P0901,7,Other,"Sore Throat, Blurred Vision",144,69,101.8,Kidney Disease,Medium,Neurology
+P0902,53,Other,Numbness,122,74,100.6,"Asthma, Heart Disease",Medium,Neurology
+P0903,10,Other,"Sore Throat, Fatigue",83,68,100.1,Heart Disease,Medium,General Medicine
+P0904,46,Female,"Numbness, Dizziness",124,79,97.8,Diabetes,Low,Neurology
+P0905,88,Other,"Cough, Fever, Chest Pain",124,99,97.0,None,Low,Cardiology
+P0906,71,Male,Abdominal Pain,106,88,97.8,Diabetes,Low,General Medicine
+P0907,19,Male,"Numbness, Vomiting, Sore Throat",138,86,100.2,"Heart Disease, None",Medium,Neurology
+P0908,54,Female,Blurred Vision,96,104,99.8,None,Medium,Neurology
+P0909,60,Male,"Abdominal Pain, Cough, Sore Throat",133,79,100.1,Kidney Disease,Medium,General Medicine
+P0910,42,Other,"Vomiting, Dizziness, Fever",94,91,96.5,"None, Kidney Disease",Low,General Medicine
+P0911,22,Male,"Cough, Shortness of Breath",127,69,99.0,Diabetes,Low,Pulmonology
+P0912,12,Other,Fatigue,95,73,95.4,"Asthma, Diabetes",Low,General Medicine
+P0913,73,Other,"Shortness of Breath, Blurred Vision, Numbness",143,87,98.3,Thyroid Disorder,High,Neurology
+P0914,66,Other,Sore Throat,144,101,95.1,"Anemia, Kidney Disease",Medium,General Medicine
+P0915,24,Other,"Cough, Chest Pain",165,78,97.8,Thyroid Disorder,High,Cardiology
+P0916,15,Other,"Numbness, Chest Pain",145,82,99.8,"Kidney Disease, Hypertension",High,Cardiology
+P0917,24,Other,"Dizziness, Vomiting",134,48,99.0,"Kidney Disease, Heart Disease",Low,General Medicine
+P0918,22,Male,"Fatigue, Shortness of Breath, Vomiting",126,86,97.3,"Kidney Disease, Asthma",Low,Pulmonology
+P0919,36,Female,"Fever, Back Pain",137,90,99.7,Heart Disease,Low,General Medicine
+P0920,20,Other,Fatigue,110,78,98.8,Heart Disease,Low,General Medicine
+P0921,16,Male,"Shortness of Breath, Sore Throat",133,62,100.2,"None, Thyroid Disorder",Medium,Pulmonology
+P0922,78,Other,"Fatigue, Sore Throat",154,66,100.2,Diabetes,Medium,General Medicine
+P0923,87,Male,"Dizziness, Chest Pain",80,90,97.3,Heart Disease,Low,Cardiology
+P0924,87,Female,"Shortness of Breath, Sore Throat, Headache",125,93,99.5,"Diabetes, Heart Disease",Low,Pulmonology
+P0925,79,Female,"Shortness of Breath, Back Pain, Cough",131,51,100.4,"Anemia, Diabetes",Medium,Pulmonology
+P0926,22,Female,"Back Pain, Blurred Vision, Cough",124,71,96.4,"None, Kidney Disease",Low,Neurology
+P0927,1,Other,"Cough, Fever",107,75,100.5,"Kidney Disease, Thyroid Disorder",Medium,General Medicine
+P0928,16,Female,"Cough, Shortness of Breath",80,71,99.9,Thyroid Disorder,Low,Pulmonology
+P0929,1,Male,"Fatigue, Fever",153,65,96.7,"Hypertension, Anemia",Medium,General Medicine
+P0930,51,Other,"Shortness of Breath, Chest Pain, Fever",142,100,97.3,"Anemia, Thyroid Disorder",High,Cardiology
+P0931,69,Other,"Fatigue, Cough, Shortness of Breath",154,90,100.0,"Heart Disease, Thyroid Disorder",High,Pulmonology
+P0932,4,Female,Chest Pain,136,81,98.1,"Diabetes, Asthma",Low,Cardiology
+P0933,13,Other,"Fever, Fatigue, Vomiting",161,64,97.9,"Diabetes, Asthma",High,Emergency
+P0934,72,Other,"Sore Throat, Back Pain",128,118,97.4,Hypertension,Medium,General Medicine
+P0935,28,Female,"Shortness of Breath, Abdominal Pain, Vomiting",133,98,97.3,Asthma,Low,Pulmonology
+P0936,11,Male,Headache,119,96,99.1,"Kidney Disease, Anemia",Low,General Medicine
+P0937,38,Other,Cough,84,82,100.8,"Thyroid Disorder, Hypertension",Medium,General Medicine
+P0938,42,Female,Dizziness,87,63,98.6,"None, Thyroid Disorder",Low,General Medicine
+P0939,47,Female,Dizziness,147,59,96.4,"Hypertension, Asthma",Medium,General Medicine
+P0940,26,Male,Shortness of Breath,117,69,100.1,"Hypertension, Thyroid Disorder",Medium,Pulmonology
+P0941,51,Other,Cough,112,77,99.5,Asthma,Low,General Medicine
+P0942,57,Other,Headache,140,81,98.9,Kidney Disease,Low,General Medicine
+P0943,49,Other,Headache,96,96,99.6,"Anemia, None",Low,General Medicine
+P0944,45,Female,Back Pain,80,83,96.9,Asthma,Low,General Medicine
+P0945,57,Other,"Sore Throat, Headache, Fatigue",108,77,98.5,"Hypertension, Kidney Disease",Low,General Medicine
+P0946,78,Other,"Fever, Vomiting, Blurred Vision",80,79,97.3,Heart Disease,Low,Neurology
+P0947,67,Male,Headache,80,69,97.0,Heart Disease,Low,General Medicine
+P0948,89,Male,"Numbness, Fever",115,53,96.4,Thyroid Disorder,Low,Neurology
+P0949,47,Other,"Numbness, Sore Throat",103,113,96.9,"Diabetes, None",Medium,Neurology
+P0950,89,Female,"Vomiting, Shortness of Breath, Sore Throat",80,82,99.2,Kidney Disease,Low,Pulmonology
+P0951,82,Female,"Fatigue, Cough, Chest Pain",109,72,98.7,Anemia,Low,Cardiology
+P0952,50,Other,"Fever, Sore Throat, Shortness of Breath",85,54,96.9,"Kidney Disease, Asthma",Low,Pulmonology
+P0953,1,Female,"Chest Pain, Fever, Dizziness",129,66,98.6,"Kidney Disease, Anemia",Low,Cardiology
+P0954,4,Female,Fatigue,111,112,100.2,"None, Kidney Disease",Medium,General Medicine
+P0955,73,Female,"Fever, Fatigue",102,64,101.4,"Asthma, Diabetes",Medium,General Medicine
+P0956,32,Female,"Numbness, Chest Pain",126,76,99.6,Thyroid Disorder,Low,Cardiology
+P0957,29,Other,"Blurred Vision, Numbness, Back Pain",118,78,101.4,Thyroid Disorder,Medium,Neurology
+P0958,17,Male,"Chest Pain, Vomiting, Headache",92,50,98.8,"Anemia, Heart Disease",Low,Cardiology
+P0959,48,Male,Numbness,144,84,98.3,Asthma,Medium,Neurology
+P0960,12,Male,"Back Pain, Sore Throat",103,87,99.3,Thyroid Disorder,Low,General Medicine
+P0961,53,Male,"Blurred Vision, Chest Pain, Dizziness",131,64,96.9,Diabetes,Low,Cardiology
+P0962,44,Male,"Chest Pain, Back Pain",87,78,97.7,Kidney Disease,Low,Cardiology
+P0963,18,Female,"Headache, Abdominal Pain",133,81,98.1,"Hypertension, Thyroid Disorder",Low,General Medicine
+P0964,12,Male,Chest Pain,160,71,99.7,None,High,Cardiology
+P0965,62,Other,"Headache, Blurred Vision, Back Pain",143,55,98.1,Asthma,Medium,Neurology
+P0966,82,Male,"Fever, Dizziness, Cough",114,60,97.6,"Hypertension, Heart Disease",Low,General Medicine
+P0967,33,Other,"Back Pain, Numbness",111,87,96.3,"Hypertension, Thyroid Disorder",Low,Neurology
+P0968,68,Female,"Abdominal Pain, Chest Pain",114,97,97.6,Asthma,Low,Cardiology
+P0969,22,Male,Vomiting,80,57,98.2,Heart Disease,Low,General Medicine
+P0970,51,Female,Back Pain,122,96,101.3,Asthma,Medium,General Medicine
+P0971,45,Male,Abdominal Pain,128,86,97.4,"Kidney Disease, Thyroid Disorder",Low,General Medicine
+P0972,59,Female,Vomiting,138,90,96.7,"None, Heart Disease",Low,General Medicine
+P0973,15,Other,"Back Pain, Dizziness",128,70,99.2,"None, Heart Disease",Low,General Medicine
+P0974,12,Male,"Abdominal Pain, Fever",91,84,95.0,Thyroid Disorder,Low,General Medicine
+P0975,19,Other,Fatigue,113,88,98.2,"None, Diabetes",Low,General Medicine
+P0976,51,Female,"Vomiting, Headache",92,105,101.2,"Anemia, Diabetes",Medium,General Medicine
+P0977,9,Female,"Blurred Vision, Fever",130,81,101.6,Anemia,Medium,Neurology
+P0978,1,Other,"Cough, Back Pain",131,93,95.8,Hypertension,Low,General Medicine
+P0979,72,Other,"Fatigue, Chest Pain, Vomiting",110,76,98.3,"Kidney Disease, Asthma",Low,Cardiology
+P0980,26,Male,Abdominal Pain,118,91,100.1,Anemia,Medium,General Medicine
+P0981,36,Male,"Dizziness, Back Pain",126,81,97.9,Diabetes,Low,General Medicine
+P0982,78,Male,Back Pain,99,94,96.6,"Kidney Disease, None",Low,General Medicine
+P0983,63,Other,"Vomiting, Back Pain, Fatigue",143,100,97.9,Thyroid Disorder,Medium,General Medicine
+P0984,84,Other,"Fever, Chest Pain",80,74,98.5,"Hypertension, Diabetes",Low,Cardiology
+P0985,67,Male,Sore Throat,121,87,96.5,Thyroid Disorder,Low,General Medicine
+P0986,20,Female,"Back Pain, Abdominal Pain",119,87,97.6,"Hypertension, None",Low,General Medicine
+P0987,66,Male,Fever,101,83,100.1,"None, Asthma",Medium,General Medicine
+P0988,77,Female,"Fatigue, Fever",106,66,96.4,"Asthma, Diabetes",Low,General Medicine
+P0989,75,Other,"Abdominal Pain, Sore Throat, Vomiting",110,93,98.6,"Diabetes, Heart Disease",Low,General Medicine
+P0990,45,Other,Shortness of Breath,120,72,96.3,"Asthma, None",Low,Pulmonology
+P0991,51,Male,Fever,133,101,97.5,"None, Diabetes",Medium,General Medicine
+P0992,60,Male,"Blurred Vision, Sore Throat, Headache",136,98,98.8,"Diabetes, None",Low,Neurology
+P0993,52,Male,"Chest Pain, Sore Throat",104,86,100.3,"Hypertension, Asthma",Medium,Cardiology
+P0994,77,Other,"Dizziness, Fever, Cough",80,97,101.4,"Kidney Disease, Hypertension",Medium,General Medicine
+P0995,22,Female,Sore Throat,127,67,96.9,"Diabetes, Hypertension",Low,General Medicine
+P0996,55,Female,Cough,114,71,96.6,"Kidney Disease, Heart Disease",Low,General Medicine
+P0997,64,Female,"Shortness of Breath, Back Pain, Sore Throat",138,95,99.4,Diabetes,Low,Pulmonology
+P0998,18,Other,"Numbness, Fatigue, Cough",122,62,98.8,"Heart Disease, Asthma",Low,Neurology
+P0999,57,Other,"Headache, Fatigue",107,64,97.6,"Hypertension, Heart Disease",Low,General Medicine
+P1000,7,Other,"Fatigue, Back Pain",134,84,100.6,"Anemia, Thyroid Disorder",Medium,General Medicine
+P1001,6,Male,"Shortness of Breath, Back Pain, Headache",143,67,96.5,None,High,Pulmonology
+P1002,40,Male,Abdominal Pain,112,76,102.1,Asthma,High,Emergency
+P1003,87,Other,"Vomiting, Fever",131,76,98.6,"Kidney Disease, Heart Disease",Low,General Medicine
+P1004,66,Other,Fever,112,52,98.4,Heart Disease,Low,General Medicine
+P1005,38,Female,Headache,114,70,97.4,"Kidney Disease, Thyroid Disorder",Low,General Medicine
+P1006,19,Male,Numbness,122,92,101.6,"Kidney Disease, Asthma",Medium,Neurology
+P1007,88,Other,"Blurred Vision, Fever, Chest Pain",139,80,98.7,Kidney Disease,Low,Cardiology
+P1008,89,Female,"Abdominal Pain, Sore Throat, Fever",141,95,96.2,Anemia,Medium,General Medicine
+P1009,23,Male,"Abdominal Pain, Fatigue, Dizziness",151,73,98.6,"Thyroid Disorder, Kidney Disease",Medium,General Medicine
+P1010,19,Male,"Headache, Blurred Vision, Numbness",136,74,97.8,"None, Diabetes",Low,Neurology
+P1011,55,Other,"Dizziness, Sore Throat, Cough",97,49,100.8,Heart Disease,Medium,General Medicine
+P1012,70,Male,"Vomiting, Numbness",153,69,98.7,Thyroid Disorder,Medium,Neurology
+P1013,39,Male,"Cough, Headache, Dizziness",138,91,99.3,Heart Disease,Low,General Medicine
+P1014,88,Female,Abdominal Pain,153,98,97.8,Kidney Disease,Medium,General Medicine
+P1015,15,Female,"Shortness of Breath, Fatigue",139,75,96.7,"Hypertension, None",Low,Pulmonology
+P1016,81,Female,Sore Throat,99,78,99.9,Diabetes,Low,General Medicine
+P1017,20,Female,"Fever, Abdominal Pain, Fatigue",123,82,97.1,Asthma,Low,General Medicine
+P1018,8,Female,"Back Pain, Fatigue",133,58,100.0,"Kidney Disease, Diabetes",Low,General Medicine
+P1019,9,Male,"Numbness, Chest Pain, Shortness of Breath",112,59,99.4,Anemia,Low,Cardiology
+P1020,73,Female,"Fatigue, Cough, Fever",115,68,100.0,"None, Kidney Disease",Low,General Medicine
+P1021,56,Other,Dizziness,123,89,96.1,"None, Anemia",Low,General Medicine
+P1022,69,Other,"Back Pain, Headache, Fever",92,91,100.0,"Asthma, Hypertension",Low,General Medicine
+P1023,50,Male,Headache,111,77,101.3,"Kidney Disease, Thyroid Disorder",Medium,General Medicine
+P1024,70,Female,"Cough, Headache, Chest Pain",99,65,97.8,Heart Disease,Low,Cardiology
+P1025,75,Male,Blurred Vision,145,91,97.6,Asthma,Medium,Neurology
+P1026,83,Other,"Fatigue, Dizziness",91,92,98.5,"Hypertension, Kidney Disease",Low,General Medicine
+P1027,88,Female,"Shortness of Breath, Chest Pain, Cough",129,88,100.1,"Kidney Disease, Heart Disease",Medium,Cardiology
+P1028,14,Female,Chest Pain,105,57,96.7,Anemia,Low,Cardiology
+P1029,89,Other,Cough,114,86,97.9,"None, Anemia",Low,General Medicine
+P1030,17,Female,"Chest Pain, Back Pain",170,91,97.8,"Kidney Disease, Hypertension",High,Cardiology
+P1031,27,Female,Back Pain,105,93,97.8,Anemia,Low,General Medicine
+P1032,55,Other,Cough,137,113,98.4,"Diabetes, Asthma",Medium,General Medicine
+P1033,26,Female,"Numbness, Back Pain, Abdominal Pain",103,64,98.4,"Asthma, Diabetes",Low,Neurology
+P1034,48,Male,"Headache, Dizziness, Vomiting",117,97,96.5,Kidney Disease,Low,General Medicine
+P1035,59,Female,"Abdominal Pain, Fever",136,73,99.0,Anemia,Low,General Medicine
+P1036,63,Male,"Abdominal Pain, Sore Throat",105,83,97.4,Heart Disease,Low,General Medicine
+P1037,35,Female,"Blurred Vision, Chest Pain, Fatigue",118,81,98.5,Thyroid Disorder,Low,Cardiology
+P1038,80,Other,Dizziness,116,74,100.0,Heart Disease,Low,General Medicine
+P1039,41,Other,"Vomiting, Blurred Vision",130,94,96.6,"Asthma, Heart Disease",Low,Neurology
+P1040,37,Male,"Chest Pain, Abdominal Pain, Vomiting",153,117,98.8,Kidney Disease,High,Cardiology
+P1041,48,Male,"Blurred Vision, Vomiting, Back Pain",127,85,97.5,"Asthma, Diabetes",Low,Neurology
+P1042,14,Other,"Cough, Back Pain, Blurred Vision",126,98,100.0,"Diabetes, Heart Disease",Low,Neurology
+P1043,31,Other,"Dizziness, Fatigue",111,68,98.9,Anemia,Low,General Medicine
+P1044,78,Male,"Vomiting, Cough",99,72,98.1,Thyroid Disorder,Low,General Medicine
+P1045,27,Female,"Numbness, Sore Throat",141,101,97.0,Diabetes,Medium,Neurology
+P1046,47,Male,Blurred Vision,103,80,98.9,Hypertension,Low,Neurology
+P1047,13,Other,Abdominal Pain,118,83,96.3,"Thyroid Disorder, Heart Disease",Low,General Medicine
+P1048,82,Other,"Shortness of Breath, Sore Throat",94,95,98.2,"Heart Disease, Anemia",Low,Pulmonology
+P1049,31,Other,"Vomiting, Back Pain",115,65,98.2,"Diabetes, Heart Disease",Low,General Medicine
+P1050,2,Male,"Fatigue, Vomiting, Chest Pain",107,83,97.6,"None, Hypertension",Low,Cardiology
+P1051,56,Other,Fever,80,112,100.3,"Diabetes, Thyroid Disorder",Medium,General Medicine
+P1052,16,Female,Shortness of Breath,113,86,99.7,"Thyroid Disorder, Kidney Disease",Low,Pulmonology
+P1053,43,Female,"Vomiting, Sore Throat, Back Pain",86,75,98.5,"Asthma, Kidney Disease",Low,General Medicine
+P1054,6,Male,"Chest Pain, Shortness of Breath",153,92,97.7,"Kidney Disease, Thyroid Disorder",High,Cardiology
+P1055,69,Female,Headache,115,89,96.3,Hypertension,Low,General Medicine
+P1056,9,Male,Numbness,111,90,102.7,Hypertension,High,Neurology
+P1057,86,Other,"Numbness, Vomiting",105,87,98.9,Diabetes,Low,Neurology
+P1058,1,Male,"Sore Throat, Vomiting, Abdominal Pain",123,80,96.8,"Hypertension, Asthma",Low,General Medicine
+P1059,82,Other,"Fatigue, Abdominal Pain",122,76,96.9,"Kidney Disease, Diabetes",Low,General Medicine
+P1060,55,Male,"Blurred Vision, Fever",135,98,97.7,"Asthma, Kidney Disease",Low,Neurology
+P1061,77,Other,"Vomiting, Fatigue",137,96,98.7,"None, Anemia",Low,General Medicine
+P1062,18,Other,"Back Pain, Dizziness",123,76,100.7,Anemia,Medium,General Medicine
+P1063,67,Other,Chest Pain,108,95,95.9,"Anemia, Heart Disease",Low,Cardiology
+P1064,65,Male,"Blurred Vision, Cough, Shortness of Breath",129,76,99.8,"Diabetes, Kidney Disease",Low,Neurology
+P1065,29,Other,"Sore Throat, Blurred Vision, Headache",100,99,99.4,Kidney Disease,Low,Neurology
+P1066,20,Other,Abdominal Pain,108,64,97.2,"Anemia, Heart Disease",Low,General Medicine
+P1067,24,Other,"Vomiting, Dizziness",93,82,97.4,"Heart Disease, Diabetes",Low,General Medicine
+P1068,60,Male,"Blurred Vision, Back Pain, Headache",117,52,96.6,"None, Kidney Disease",Low,Neurology
+P1069,22,Female,"Chest Pain, Blurred Vision, Fever",125,105,97.7,"None, Hypertension",Medium,Cardiology
+P1070,18,Female,Chest Pain,139,64,96.8,Heart Disease,Low,Cardiology
+P1071,14,Female,Blurred Vision,138,86,98.7,"Heart Disease, Thyroid Disorder",Low,Neurology
+P1072,19,Female,Back Pain,128,78,96.5,Hypertension,Low,General Medicine
+P1073,21,Other,"Chest Pain, Numbness, Abdominal Pain",115,83,100.8,"Hypertension, Anemia",Medium,Cardiology
+P1074,74,Other,Abdominal Pain,121,74,98.4,None,Low,General Medicine
+P1075,59,Female,Chest Pain,116,83,96.9,Anemia,Low,Cardiology
+P1076,46,Female,"Shortness of Breath, Numbness",99,112,96.5,"Hypertension, Diabetes",Medium,Neurology
+P1077,2,Other,"Dizziness, Fever, Numbness",109,66,100.6,"Diabetes, None",Medium,Neurology
+P1078,32,Male,"Vomiting, Abdominal Pain",120,106,97.0,"Anemia, Kidney Disease",Medium,General Medicine
+P1079,58,Other,Vomiting,115,68,97.6,"Anemia, Hypertension",Low,General Medicine
+P1080,26,Male,"Vomiting, Fever, Headache",118,69,97.2,"Thyroid Disorder, Kidney Disease",Low,General Medicine
+P1081,27,Female,"Numbness, Fever, Cough",112,78,97.8,"Thyroid Disorder, Heart Disease",Low,Neurology
+P1082,57,Other,"Dizziness, Headache",96,80,101.2,"Diabetes, Hypertension",Medium,General Medicine
+P1083,80,Other,"Vomiting, Abdominal Pain, Numbness",119,82,97.4,Asthma,Low,Neurology
+P1084,79,Other,"Numbness, Back Pain",143,101,100.5,Kidney Disease,Medium,Neurology
+P1085,41,Other,Numbness,153,83,99.2,Diabetes,Medium,Neurology
+P1086,43,Male,"Cough, Fatigue",137,76,97.6,Anemia,Low,General Medicine
+P1087,14,Female,Back Pain,130,83,100.1,"Heart Disease, Diabetes",Medium,General Medicine
+P1088,30,Male,Blurred Vision,128,73,100.2,None,Medium,Neurology
+P1089,81,Other,"Shortness of Breath, Blurred Vision, Numbness",129,78,99.6,Diabetes,Low,Neurology
+P1090,76,Male,"Chest Pain, Vomiting, Numbness",158,104,99.6,Diabetes,High,Cardiology
+P1091,15,Other,Headache,136,94,98.2,"Anemia, Kidney Disease",Low,General Medicine
+P1092,58,Male,"Abdominal Pain, Headache, Vomiting",92,75,99.6,"Heart Disease, Diabetes",Low,General Medicine
+P1093,87,Male,"Sore Throat, Fever",105,77,100.1,"Thyroid Disorder, Hypertension",Medium,General Medicine
+P1094,25,Male,"Headache, Chest Pain",124,59,99.3,"Diabetes, Asthma",Low,Cardiology
+P1095,38,Male,"Vomiting, Chest Pain, Numbness",124,58,98.7,"Diabetes, Anemia",Low,Cardiology
+P1096,88,Other,"Shortness of Breath, Blurred Vision",91,64,98.3,Anemia,Low,Neurology
+P1097,9,Other,"Cough, Fever",104,75,101.2,Diabetes,Medium,General Medicine
+P1098,58,Other,"Headache, Abdominal Pain, Fever",152,84,100.9,"Hypertension, Kidney Disease",Medium,General Medicine
+P1099,55,Other,Fever,111,76,99.0,"Heart Disease, Diabetes",Low,General Medicine
+P1100,84,Other,"Vomiting, Blurred Vision",132,76,99.3,Anemia,Low,Neurology
+P1101,73,Female,"Vomiting, Back Pain",120,77,100.9,Asthma,Medium,General Medicine
+P1102,9,Male,"Back Pain, Abdominal Pain",155,79,95.4,Kidney Disease,Medium,General Medicine
+P1103,19,Female,"Headache, Vomiting, Fever",119,66,96.8,Kidney Disease,Low,General Medicine
+P1104,49,Other,"Cough, Abdominal Pain",137,71,95.0,"Asthma, Diabetes",Low,General Medicine
+P1105,66,Other,Vomiting,122,92,97.5,Heart Disease,Low,General Medicine
+P1106,56,Other,"Cough, Numbness",85,68,95.5,"Anemia, None",Low,Neurology
+P1107,55,Other,"Back Pain, Shortness of Breath",129,99,99.2,None,Low,Pulmonology
+P1108,24,Male,Back Pain,80,75,100.0,Anemia,Low,General Medicine
+P1109,49,Female,Sore Throat,146,52,101.8,"Anemia, Heart Disease",Medium,General Medicine
+P1110,20,Female,Fever,106,88,97.3,"None, Hypertension",Low,General Medicine
+P1111,43,Other,Vomiting,124,66,97.7,Asthma,Low,General Medicine
+P1112,84,Other,"Fatigue, Abdominal Pain, Numbness",119,66,95.0,Asthma,Low,Neurology
+P1113,12,Male,Back Pain,120,88,100.7,Anemia,Medium,General Medicine
+P1114,26,Other,Abdominal Pain,140,45,99.0,Asthma,Low,General Medicine
+P1115,40,Other,"Chest Pain, Fever, Sore Throat",135,62,98.7,Heart Disease,Low,Cardiology
+P1116,84,Male,"Blurred Vision, Chest Pain",144,108,98.3,Diabetes,High,Cardiology
+P1117,78,Male,"Blurred Vision, Sore Throat",82,92,97.5,Diabetes,Low,Neurology
+P1118,64,Male,"Dizziness, Back Pain",123,85,100.0,"Kidney Disease, None",Low,General Medicine
+P1119,51,Other,"Fatigue, Chest Pain, Dizziness",124,59,96.4,None,Low,Cardiology
+P1120,53,Other,Dizziness,127,81,98.2,Diabetes,Low,General Medicine
+P1121,59,Female,Sore Throat,96,93,99.2,"Hypertension, Kidney Disease",Low,General Medicine
+P1122,53,Female,"Chest Pain, Abdominal Pain, Shortness of Breath",134,112,99.3,Hypertension,Medium,Cardiology
+P1123,70,Male,"Blurred Vision, Vomiting, Chest Pain",132,51,99.0,Anemia,Low,Cardiology
+P1124,35,Male,Fever,137,63,97.1,Diabetes,Low,General Medicine
+P1125,10,Other,"Blurred Vision, Headache, Vomiting",120,91,97.5,"Hypertension, Diabetes",Low,Neurology
+P1126,62,Male,"Headache, Fatigue, Abdominal Pain",127,78,100.5,"Asthma, Diabetes",Medium,General Medicine
+P1127,4,Other,"Fever, Blurred Vision, Chest Pain",130,67,99.2,"Diabetes, Kidney Disease",Low,Cardiology
+P1128,82,Female,"Vomiting, Fever",126,85,98.7,Asthma,Low,General Medicine
+P1129,81,Male,"Cough, Blurred Vision, Dizziness",103,88,98.2,Anemia,Low,Neurology
+P1130,57,Other,"Shortness of Breath, Headache, Fever",80,76,102.2,Diabetes,High,Pulmonology
+P1131,8,Male,"Abdominal Pain, Sore Throat, Chest Pain",106,73,99.6,None,Low,Cardiology
+P1132,8,Male,"Dizziness, Headache, Shortness of Breath",131,71,100.4,"Heart Disease, Hypertension",Medium,Pulmonology
+P1133,14,Other,"Fever, Cough",128,89,97.9,Hypertension,Low,General Medicine
+P1134,39,Male,Abdominal Pain,125,76,99.7,Diabetes,Low,General Medicine
+P1135,9,Male,"Abdominal Pain, Blurred Vision, Back Pain",143,67,98.4,"Thyroid Disorder, Diabetes",Medium,Neurology
+P1136,44,Other,"Dizziness, Shortness of Breath, Cough",109,82,97.6,"Asthma, None",Low,Pulmonology
+P1137,38,Male,"Vomiting, Shortness of Breath, Sore Throat",102,79,98.4,Diabetes,Low,Pulmonology
+P1138,85,Female,"Abdominal Pain, Fever, Vomiting",129,74,95.8,Asthma,Low,General Medicine
+P1139,33,Other,"Chest Pain, Vomiting",104,78,97.3,"Hypertension, Asthma",Low,Cardiology
+P1140,52,Other,Numbness,107,82,98.3,"Heart Disease, Diabetes",Low,Neurology
+P1141,25,Female,Fever,143,76,97.6,Heart Disease,Medium,General Medicine
+P1142,84,Male,Abdominal Pain,88,112,96.3,"Thyroid Disorder, Diabetes",Medium,General Medicine
+P1143,18,Female,Headache,95,63,98.0,Hypertension,Low,General Medicine
+P1144,10,Other,"Shortness of Breath, Cough, Vomiting",103,82,100.0,"Asthma, Heart Disease",Low,Pulmonology
+P1145,33,Female,"Headache, Fever",151,92,99.7,"Asthma, Diabetes",Medium,General Medicine
+P1146,19,Female,"Blurred Vision, Shortness of Breath",91,70,97.2,None,Low,Neurology
+P1147,80,Female,Fever,130,76,98.4,"None, Asthma",Low,General Medicine
+P1148,57,Other,"Abdominal Pain, Back Pain",106,61,98.7,Anemia,Low,General Medicine
+P1149,54,Female,Cough,104,61,98.7,Thyroid Disorder,Low,General Medicine
+P1150,76,Male,Dizziness,142,83,99.0,"Asthma, Kidney Disease",Medium,General Medicine
+P1151,82,Male,Abdominal Pain,147,55,98.8,"Hypertension, Kidney Disease",Medium,General Medicine
+P1152,26,Female,"Back Pain, Blurred Vision, Fever",109,73,99.8,"Anemia, Thyroid Disorder",Low,Neurology
+P1153,23,Male,"Vomiting, Chest Pain, Dizziness",149,86,99.8,"None, Thyroid Disorder",High,Cardiology
+P1154,5,Other,Vomiting,115,89,97.1,"None, Hypertension",Low,General Medicine
+P1155,41,Female,"Back Pain, Blurred Vision",112,68,99.5,Diabetes,Low,Neurology
+P1156,15,Other,"Back Pain, Fever",142,88,97.3,"None, Anemia",Medium,General Medicine
+P1157,65,Female,"Abdominal Pain, Blurred Vision",133,65,96.0,Kidney Disease,Low,Neurology
+P1158,40,Female,Numbness,113,85,99.1,Asthma,Low,Neurology
+P1159,25,Male,"Shortness of Breath, Fatigue",80,82,100.4,Anemia,Medium,Pulmonology
+P1160,69,Other,"Back Pain, Shortness of Breath, Sore Throat",149,70,95.0,"Kidney Disease, Hypertension",High,Pulmonology
+P1161,58,Other,"Vomiting, Headache, Fever",131,77,97.0,Kidney Disease,Low,General Medicine
+P1162,56,Female,"Abdominal Pain, Fatigue",95,90,98.7,Anemia,Low,General Medicine
+P1163,51,Other,"Numbness, Fatigue, Headache",131,71,98.2,"Kidney Disease, Thyroid Disorder",Low,Neurology
+P1164,83,Other,"Sore Throat, Cough, Shortness of Breath",121,68,97.4,"Diabetes, None",Low,Pulmonology
+P1165,4,Female,Headache,99,54,99.4,Diabetes,Low,General Medicine
+P1166,9,Male,"Cough, Back Pain",93,76,98.7,Anemia,Low,General Medicine
+P1167,35,Male,Fatigue,161,88,99.4,Heart Disease,High,Emergency
+P1168,41,Female,"Fatigue, Chest Pain, Abdominal Pain",88,74,97.6,"Thyroid Disorder, Asthma",Low,Cardiology
+P1169,28,Other,"Fever, Headache, Shortness of Breath",115,51,97.7,None,Low,Pulmonology
+P1170,88,Male,"Numbness, Dizziness, Vomiting",99,94,98.7,"Kidney Disease, Asthma",Low,Neurology
+P1171,39,Other,"Back Pain, Fatigue, Sore Throat",132,55,98.6,"Anemia, Hypertension",Low,General Medicine
+P1172,31,Other,Sore Throat,118,67,100.0,"Hypertension, Thyroid Disorder",Low,General Medicine
+P1173,43,Female,Abdominal Pain,137,80,99.3,"Heart Disease, Thyroid Disorder",Low,General Medicine
+P1174,77,Male,Dizziness,152,78,100.1,"Anemia, Diabetes",Medium,General Medicine
+P1175,64,Other,Back Pain,115,51,99.6,"Hypertension, Diabetes",Low,General Medicine
+P1176,49,Other,"Numbness, Chest Pain, Back Pain",141,89,99.0,Diabetes,High,Cardiology
+P1177,58,Male,"Blurred Vision, Chest Pain",124,98,95.6,"Heart Disease, Hypertension",Low,Cardiology
+P1178,37,Male,Fatigue,122,73,99.6,Kidney Disease,Low,General Medicine
+P1179,18,Female,Dizziness,121,60,98.1,"Hypertension, Heart Disease",Low,General Medicine
+P1180,66,Female,Fever,106,60,98.3,"Anemia, Thyroid Disorder",Low,General Medicine
+P1181,69,Male,"Dizziness, Chest Pain",87,75,100.4,Kidney Disease,Medium,Cardiology
+P1182,21,Other,"Headache, Abdominal Pain, Sore Throat",100,84,97.6,Anemia,Low,General Medicine
+P1183,78,Female,"Cough, Back Pain, Abdominal Pain",118,63,96.4,Hypertension,Low,General Medicine
+P1184,63,Other,"Cough, Headache, Fever",158,87,95.8,"Asthma, Anemia",Medium,General Medicine
+P1185,13,Female,Dizziness,127,83,100.3,Asthma,Medium,General Medicine
+P1186,10,Other,"Shortness of Breath, Headache, Sore Throat",80,93,98.4,Diabetes,Low,Pulmonology
+P1187,71,Other,"Numbness, Sore Throat",141,56,95.0,Thyroid Disorder,Medium,Neurology
+P1188,54,Male,"Dizziness, Blurred Vision",131,75,99.2,Kidney Disease,Low,Neurology
+P1189,21,Female,Back Pain,87,89,97.4,"Kidney Disease, Asthma",Low,General Medicine
+P1190,65,Female,Headache,88,98,98.9,"Kidney Disease, Hypertension",Low,General Medicine
+P1191,40,Female,"Cough, Shortness of Breath, Abdominal Pain",115,62,95.8,"Anemia, Hypertension",Low,Pulmonology
+P1192,52,Male,"Vomiting, Back Pain, Sore Throat",121,107,98.0,Diabetes,Medium,General Medicine
+P1193,70,Male,Headache,135,52,98.5,"Kidney Disease, None",Low,General Medicine
+P1194,17,Other,"Cough, Fever",131,80,97.8,"Heart Disease, Asthma",Low,General Medicine
+P1195,62,Male,"Abdominal Pain, Back Pain, Blurred Vision",141,93,101.4,Asthma,Medium,Neurology
+P1196,36,Male,"Headache, Fatigue",165,72,98.0,"None, Thyroid Disorder",High,Emergency
+P1197,69,Female,"Headache, Abdominal Pain, Fatigue",125,80,96.0,"Asthma, None",Low,General Medicine
+P1198,88,Male,Headache,147,82,95.3,"Anemia, None",Medium,General Medicine
+P1199,27,Other,"Headache, Vomiting, Chest Pain",141,71,97.3,"Asthma, None",High,Cardiology
+P1200,1,Male,"Abdominal Pain, Cough",105,71,97.8,"Anemia, Heart Disease",Low,General Medicine

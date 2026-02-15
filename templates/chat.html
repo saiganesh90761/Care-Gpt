@@ -1,0 +1,275 @@
+{% extends "base.html" %}
+{% block title %}Chat with AI – HealthApp AI{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1 class="page-title">Health assistant</h1>
+  <p class="page-desc">Ask questions about symptoms, medications, or general health. Type your message below or
+    <strong>use the mic</strong> 🎙️ to speak. Powered by Gemini AI.
+  </p>
+</div>
+<div class="chat-page-wrap">
+  <div class="chat-container">
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-msg bot">Hello! I'm your health assistant. You can ask about symptoms, medications, or when to
+        see a doctor. Type your question or use the microphone to speak. I'm not a substitute for professional medical
+        advice.</div>
+    </div>
+    <div class="chat-form-wrap">
+      <form class="chat-form" id="chat-form">
+        <input type="text" id="chat-input" placeholder="Type or speak..." autocomplete="off" aria-label="Chat message">
+        <button type="button" id="mic-btn" class="btn-icon" title="Speak">
+          <span class="material-symbols-outlined">mic</span>
+        </button>
+        <button type="submit" id="chat-send">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+  (function () {
+    var form = document.getElementById('chat-form');
+    var input = document.getElementById('chat-input');
+    var messages = document.getElementById('chat-messages');
+    var sendBtn = document.getElementById('chat-send');
+    var micBtn = document.getElementById('mic-btn');
+    var currentUtterance = null;
+    var currentAudioBtn = null;
+
+    // --- Speech Recognition (Voice Input) ---
+    var Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    var recognition = Recognition ? new Recognition() : null;
+
+    if (recognition) {
+      recognition.continuous = false;
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+
+      micBtn.addEventListener('click', function () {
+        stopSpeech(); // Stop TTS if playing
+        if (micBtn.classList.contains('listening')) {
+          recognition.stop();
+        } else {
+          recognition.start();
+        }
+      });
+
+      recognition.onstart = function () {
+        micBtn.classList.add('listening');
+        micBtn.innerHTML = '<span class="material-symbols-outlined">mic_off</span>';
+        input.placeholder = "Listening...";
+      };
+
+      recognition.onend = function () {
+        micBtn.classList.remove('listening');
+        micBtn.innerHTML = '<span class="material-symbols-outlined">mic</span>';
+        input.placeholder = "Type or speak...";
+      };
+
+      recognition.onresult = function (event) {
+        input.value = event.results[0][0].transcript;
+        stopSpeech(); // Ensure silence
+      };
+    } else {
+      if (micBtn) micBtn.style.display = 'none';
+    }
+
+    // --- Text-to-Speech Control ---
+
+    function stopSpeech() {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+      if (currentAudioBtn) {
+        // Reset icon to play
+        currentAudioBtn.innerHTML = '<span class="material-symbols-outlined" style="font-size:1.1rem">volume_up</span>';
+        currentAudioBtn.title = "Read aloud";
+        currentAudioBtn.classList.remove('playing');
+        currentAudioBtn = null;
+      }
+    }
+
+    function speakText(text, btn) {
+      if (!('speechSynthesis' in window)) return;
+
+      // If clicking the same button while playing, stop it (Toggle)
+      if (currentAudioBtn === btn && window.speechSynthesis.speaking) {
+        stopSpeech();
+        return;
+      }
+
+      stopSpeech(); // Stop any other concurrent speech
+
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = 'en-US';
+      u.rate = 1.0;
+
+      u.onend = function () {
+        stopSpeech(); // Reset UI when done
+      };
+
+      u.onerror = function () {
+        stopSpeech(); // Reset UI on error
+      };
+
+      if (btn) {
+        currentAudioBtn = btn;
+        // Change icon to stop
+        btn.innerHTML = '<span class="material-symbols-outlined" style="font-size:1.1rem; color:var(--color-primary);">stop_circle</span>';
+        btn.title = "Stop reading";
+        btn.classList.add('playing');
+      }
+
+      window.speechSynthesis.speak(u);
+    }
+
+    // Stop audio when user starts typing
+    input.addEventListener('input', function () {
+      if (window.speechSynthesis.speaking) {
+        stopSpeech();
+      }
+    });
+
+    function addMessage(text, type) {
+      var msgDiv = document.createElement('div');
+      msgDiv.className = 'chat-msg ' + type;
+
+      var contentDiv = document.createElement('div');
+      contentDiv.textContent = text;
+      msgDiv.appendChild(contentDiv);
+
+      // Add audio button for bot messages
+      if (type === 'bot') {
+        var audioBtn = document.createElement('button');
+        audioBtn.className = 'btn-audio';
+        audioBtn.innerHTML = '<span class="material-symbols-outlined" style="font-size:1.1rem">volume_up</span>';
+        audioBtn.title = "Read aloud";
+        audioBtn.type = "button";
+        audioBtn.onclick = function () { speakText(text, audioBtn); };
+        msgDiv.appendChild(audioBtn);
+
+        // Return both div and btn (helper logic)
+        msgDiv._audioBtn = audioBtn;
+      }
+
+      messages.appendChild(msgDiv);
+      messages.scrollTop = messages.scrollHeight;
+      return msgDiv;
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var text = (input.value || '').trim();
+      if (!text) return;
+
+      stopSpeech(); // Stop any current speech
+      input.value = '';
+      sendBtn.disabled = true;
+
+      addMessage(text, 'user');
+
+      // Temporary "Thinking..." message
+      var botEl = document.createElement('div');
+      botEl.className = 'chat-msg bot';
+      botEl.textContent = 'Thinking...';
+      messages.appendChild(botEl);
+      messages.scrollTop = messages.scrollHeight;
+
+      fetch('{{ url_for("api_chat") }}', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: text })
+      })
+        .then(function (r) { return r.ok ? r.json() : { error: 'Request failed', reply: 'Error.' }; })
+        .then(function (data) {
+          messages.removeChild(botEl);
+
+          var reply = data.reply || data.error || 'No response.';
+          var msgEl = addMessage(reply, 'bot');
+
+          // Auto-play audio and update the button state
+          if (msgEl._audioBtn) {
+            speakText(reply, msgEl._audioBtn);
+          }
+        })
+        .catch(function (err) {
+          if (botEl.parentNode) messages.removeChild(botEl);
+          addMessage('Connection error. Please try again.', 'bot');
+        })
+        .finally(function () {
+          sendBtn.disabled = false;
+          messages.scrollTop = messages.scrollHeight;
+        });
+    });
+  })();
+</script>
+
+<style>
+  .btn-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-icon:hover {
+    background: var(--color-surface-dim);
+  }
+
+  .btn-icon.listening {
+    color: var(--color-danger);
+    animation: pulse 1.5s infinite;
+  }
+
+  .btn-audio {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+    transition: all .2s;
+  }
+
+  .btn-audio:hover {
+    opacity: 1;
+    color: var(--color-primary);
+  }
+
+  .btn-audio:focus {
+    outline: none;
+    opacity: 1;
+    color: var(--color-primary);
+  }
+
+  .btn-audio.playing {
+    opacity: 1;
+    background: rgba(15, 118, 110, 0.1);
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+</style>
+{% endblock %}

@@ -1,0 +1,21 @@
+PATIENT HEALTH RECORD (Sample EHR)
+=================================
+
+Patient ID: P-88492
+Age: 58
+Gender: Male
+
+Chief Complaint / Symptoms:
+Chest pain, shortness of breath, dizziness for the past 2 hours.
+
+Vitals:
+Blood Pressure: 165/95
+Heart Rate: 108
+Temperature: 36.8
+
+Pre-Existing Conditions:
+Hypertension, Type 2 Diabetes, History of heart disease
+
+Notes:
+Patient presented with acute onset chest discomfort and dyspnea.
+Referred for urgent evaluation.

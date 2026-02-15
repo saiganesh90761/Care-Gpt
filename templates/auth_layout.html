@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}HealthApp AI{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+</head>
+<body>
+  <div class="auth-page">
+    <div class="auth-card">
+      <a href="{{ url_for('index') }}" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;text-decoration:none;color:var(--color-text);margin-bottom:1rem;">
+        <span style="width:40px;height:40px;background:var(--color-primary);color:white;border-radius:8px;display:flex;align-items:center;justify-content:center;">&#9829;</span>
+        <span style="font-weight:800;font-size:1.25rem;">HealthApp AI</span>
+      </a>
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+</body>
+</html>

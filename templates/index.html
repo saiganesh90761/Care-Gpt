@@ -1,0 +1,307 @@
+{% extends "base.html" %}
+{% block title %}Patient Dashboard – HealthApp AI{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1 class="page-title">Hello, {{ user.full_name }}</h1>
+  <p class="page-desc">Your health portal. Manage appointments, view prescriptions, and check symptoms.</p>
+</div>
+
+<div class="dash-grid">
+  <div class="dash-main">
+
+    <section style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem; margin-bottom:2rem;">
+      <a href="/symptoms" class="card"
+        style="text-decoration:none; padding:1.5rem; display:flex; flex-direction:column; align-items:center; gap:0.5rem; text-align:center; transition:transform .2s;">
+        <div class="stat-icon medium"><span class="material-symbols-outlined">vital_signs</span></div>
+        <div>
+          <h3 class="card-title" style="margin:0;">Symptom Check</h3>
+          <p style="margin:0; font-size:0.75rem; color:var(--color-text-muted);">AI Triage</p>
+        </div>
+      </a>
+      <a href="/ehr" class="card"
+        style="text-decoration:none; padding:1.5rem; display:flex; flex-direction:column; align-items:center; gap:0.5rem; text-align:center; transition:transform .2s;">
+        <div class="stat-icon high"><span class="material-symbols-outlined">assignment_add</span></div>
+        <div>
+          <h3 class="card-title" style="margin:0;">Create EHR</h3>
+          <p style="margin:0; font-size:0.75rem; color:var(--color-text-muted);">For Doctor Visit</p>
+        </div>
+      </a>
+      <a href="/chat" class="card"
+        style="text-decoration:none; padding:1.5rem; display:flex; flex-direction:column; align-items:center; gap:0.5rem; text-align:center; transition:transform .2s;">
+        <div class="stat-icon low"><span class="material-symbols-outlined">chat</span></div>
+        <div>
+          <h3 class="card-title" style="margin:0;">AI Helper</h3>
+          <p style="margin:0; font-size:0.75rem; color:var(--color-text-muted);">Ask Questions</p>
+        </div>
+      </a>
+    </section>
+
+    <!-- My Health Insights (New) -->
+    <section class="card" style="margin-bottom: 2rem;">
+      <div class="card-header" style="border-bottom:1px solid var(--color-border); padding:1rem 1.5rem;">
+        <h3 class="card-title" style="margin:0;">
+          <span class="material-symbols-outlined" style="color:var(--color-primary)">monitoring</span>
+          My Health Insights
+        </h3>
+      </div>
+      <div class="card-body">
+        <div style="display:grid; grid-template-columns: 1fr; gap:2rem;">
+          <div style="display:flex; align-items:center; gap:2rem;">
+            <div class="stat-card" style="flex:1; text-align:center;">
+              <h4 style="font-size:0.875rem; color:var(--color-text-muted); margin-bottom:0.5rem;">Total Checks</h4>
+              <div class="stat-value" id="patient-total-checks">--</div>
+            </div>
+            <div style="flex:2; height:200px; position:relative;">
+              <canvas id="patientDeptChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Appointments -->
+    <section class="card" style="margin-bottom: 2rem;">
+      <div class="card-header"
+        style="border-bottom:1px solid var(--color-border); padding:1rem 1.5rem; display:flex; justify-content:space-between; align-items:center;">
+        <h3 class="card-title" style="margin:0;">Upcoming Appointments</h3>
+        {% if not doctors %}
+        <span class="badge badge-medium">Link a doctor first</span>
+        {% else %}
+        <button onclick="document.getElementById('appointment-modal').showModal()" class="btn-primary"
+          style="font-size:0.875rem; padding:0.5rem 1rem;">Book New</button>
+        {% endif %}
+      </div>
+      <div class="card-body" style="padding:0;">
+        {% if appointments %}
+        <ul class="recent-list">
+          {% for apt in appointments %}
+          <li class="recent-item">
+            <div>
+              <p class="recent-item-dept">{{ apt.other_name.full_name }}</p>
+              <p class="recent-item-symptoms">{{ apt.notes or 'General Checkup' }}</p>
+            </div>
+            <div class="recent-item-meta">
+              <span class="badge badge-low">{{ apt.appointment_time | replace('T', ' ') }}</span>
+              <form action="{{ url_for('cancel_appointment', appointment_id=apt.id) }}" method="POST" style="margin:0;"
+                onsubmit="return confirm('Are you sure you want to cancel this appointment?');">
+                <button type="submit" class="btn-icon"
+                  style="color:var(--color-danger); background:none; border:none; cursor:pointer;"
+                  title="Cancel Appointment">
+                  <span class="material-symbols-outlined" style="font-size:1.2rem;">delete</span>
+                </button>
+              </form>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p class="empty-state">No upcoming appointments.</p>
+        {% endif %}
+      </div>
+    </section>
+
+    <!-- Prescriptions -->
+    <section class="card">
+      <div class="card-header" style="border-bottom:1px solid var(--color-border); padding:1rem 1.5rem;">
+        <h3 class="card-title" style="margin:0;">Active Prescriptions</h3>
+      </div>
+      <div class="card-body">
+        {% if prescriptions %}
+        <div style="display:grid; gap:1rem;">
+          {% for p in prescriptions %}
+          <div class="side-card" style="margin:0;">
+            <div style="display:flex; justify-content:space-between; align-items:start;">
+              <h4 class="side-card-title">{{ p.medication_name }} <span class="badge badge-medium">{{ p.dosage }}</span>
+              </h4>
+              <span style="font-size:0.75rem; color:var(--color-text-muted);">{{ p.date_prescribed.split(' ')[0]
+                }}</span>
+            </div>
+            <p class="side-card-meta">Prescribed by Dr. {{ p.doctor_name }} • {{ p.frequency }}</p>
+            {% if p.instructions %}
+            <p class="side-card-desc" style="margin:0;">Note: {{ p.instructions }}</p>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        {% else %}
+        <p class="empty-state">No active prescriptions.</p>
+        {% endif %}
+      </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <dialog id="appointment-modal"
+      style="border:none; border-radius:12px; padding:0; box-shadow:var(--shadow-lg); width:100%; max-width:400px;">
+      <div class="card-body">
+        <h3 class="card-title">Book Appointment</h3>
+        <form action="/appointments/book" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label class="form-label">Select Doctor</label>
+            <select name="doctor_id" id="doc-select" class="form-select" required onchange="fetchSlots()">
+              <option value="">-- Choose --</option>
+              {% for doc in doctors %}
+              <option value="{{ doc.id }}">Dr. {{ doc.full_name }} ({{ doc.specialization or 'General' }})</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <!-- Slots container -->
+          <div class="form-group" id="slots-group" style="display:none;">
+            <label class="form-label">Available Slots</label>
+            <select name="slot_id" id="slot-select" class="form-select">
+              <!-- Populated by JS -->
+            </select>
+            <p id="no-slots-msg" style="display:none; color:var(--color-danger); font-size:0.875rem;">No set slots. You
+              can request a time below.</p>
+          </div>
+
+          <!-- Fallback date picker -->
+          <div class="form-group" id="manual-date-group" style="display:none;">
+            <label class="form-label">Requested Date</label>
+            <input type="datetime-local" name="date" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Upload EHR (Optional)</label>
+            <input type="file" name="ehr_file" class="form-input" accept=".pdf,.jpg,.jpeg,.png,.txt">
+            <p style="font-size:0.75rem; color:var(--color-text-muted); margin-top:0.25rem;">Attach past records or test
+              results.</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Notes</label>
+            <textarea name="notes" class="form-textarea" rows="2" placeholder="Reason for visit..."></textarea>
+          </div>
+          <div class="form-actions" style="display:flex; justify-content:flex-end; gap:0.5rem;">
+            <button type="button" onclick="document.getElementById('appointment-modal').close()"
+              class="btn-upload">Cancel</button>
+            <button type="submit" class="btn-primary">Confirm</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+  </div>
+
+  <!-- Sidebar -->
+  <aside class="dash-side">
+    <div class="side-card">
+      <h3 class="side-card-title">My Doctors</h3>
+      {% if doctors %}
+      <ul class="recent-list" style="margin-top:1rem;">
+        {% for doc in doctors %}
+        <li style="padding:0.75rem 0; border-bottom:1px solid var(--color-border);">
+          <div style="font-weight:700;">Dr. {{ doc.full_name }}</div>
+          <div style="font-size:0.875rem; color:var(--color-text-muted);">{{ doc.specialization or 'General Medicine' }}
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="empty-state">No linked doctors. Ask your doctor for an invite link.</p>
+      {% endif %}
+    </div>
+
+    <div class="side-card chat-card">
+      <h3 class="side-card-title">Need Help?</h3>
+      <p class="side-card-desc">Ask our AI assistant about symptoms or medications anytime.</p>
+      <a href="/chat" class="btn" style="display:block; text-align:center;">Chat with AI</a>
+    </div>
+  </aside>
+</div>
+
+<script>
+  function fetchSlots() {
+    var docId = document.getElementById('doc-select').value;
+    var slotGroup = document.getElementById('slots-group');
+    var slotSelect = document.getElementById('slot-select');
+    var manualGroup = document.getElementById('manual-date-group');
+    var noSlotsMsg = document.getElementById('no-slots-msg');
+
+    if (!docId) {
+      slotGroup.style.display = 'none';
+      manualGroup.style.display = 'none';
+      return;
+    }
+
+    fetch('/api/doctors/' + docId + '/slots')
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        var slots = data.slots;
+        slotSelect.innerHTML = '';
+
+        if (slots && slots.length > 0) {
+          // Show slots
+          slots.forEach(function (s) {
+            var opt = document.createElement('option');
+            opt.value = s.id;
+            opt.text = new Date(s.start_time).toLocaleString(undefined, {
+              weekday: 'short', month: 'short', day: 'numeric',
+              hour: 'numeric', minute: '2-digit'
+            });
+            slotSelect.appendChild(opt);
+          });
+          slotGroup.style.display = 'block';
+          noSlotsMsg.style.display = 'none';
+          manualGroup.style.display = 'none';
+          slotSelect.required = true;
+        } else {
+          // No slots, enable manual picker
+          slotGroup.style.display = 'block';
+          slotSelect.innerHTML = '';
+          noSlotsMsg.style.display = 'block';
+          manualGroup.style.display = 'block';
+          slotSelect.required = false;
+        }
+      })
+      .catch(function (err) {
+        console.error(err);
+        // Fallback
+        manualGroup.style.display = 'block';
+      });
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    fetch('/api/patient/stats')
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        var totalEl = document.getElementById('patient-total-checks');
+        if (totalEl) totalEl.innerText = data.total_checks || 0;
+
+        var chartEl = document.getElementById('patientDeptChart');
+        if (chartEl && data.dept_distribution && data.dept_distribution.length > 0) {
+          var labels = data.dept_distribution.map(function (d) { return d.label; });
+          var values = data.dept_distribution.map(function (d) { return d.value; });
+
+          new Chart(chartEl.getContext('2d'), {
+            type: 'bar',
+            data: {
+              labels: labels,
+              datasets: [{
+                label: 'Frequency',
+                data: values,
+                backgroundColor: '#0f766e',
+                borderRadius: 4
+              }]
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              plugins: { legend: { display: false } },
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  ticks: { stepSize: 1 }
+                }
+              }
+            }
+          });
+        }
+      })
+      .catch(function (err) { console.error(err); });
+  });
+</script>
+{% endblock %}

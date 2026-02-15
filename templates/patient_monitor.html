@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block title %}Patient Monitor – HealthApp AI{% endblock %}
+{% block content %}
+<div class="page-header">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+        <div>
+            <h1 class="page-title">Live Vitals Monitor</h1>
+            <p class="page-desc">Real-time tracking for <b>{{ patient.full_name }}</b></p>
+        </div>
+        <div style="display:flex; gap:1rem;">
+            <button id="btn-simulate" onclick="toggleSimulation()" class="btn-upload"
+                style="border-color:var(--color-danger); color:var(--color-danger);">
+                <span class="material-symbols-outlined">warning</span> Simulate Emergency
+            </button>
+            <a href="{{ url_for('doctor_dashboard') if user.role == 'doctor' else url_for('index') }}"
+                class="btn-upload">Back to Dashboard</a>
+        </div>
+    </div>
+</div>
+
+<div class="dash-grid" style="grid-template-columns: 1fr;">
+    <!-- Live Stats Cards -->
+    <div
+        style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem; margin-bottom:2rem;">
+        <div class="card" style="padding:1.5rem; text-align:center;">
+            <p class="text-muted">Heart Rate</p>
+            <h2 id="val-hr" style="font-size:2.5rem; color:var(--color-danger); margin:0.5rem 0;">--</h2>
+            <p class="text-muted">BPM</p>
+        </div>
+        <div class="card" style="padding:1.5rem; text-align:center;">
+            <p class="text-muted">SpO2</p>
+            <h2 id="val-spo2" style="font-size:2.5rem; color:var(--color-primary); margin:0.5rem 0;">--</h2>
+            <p class="text-muted">%</p>
+        </div>
+        <div class="card" style="padding:1.5rem; text-align:center;">
+            <p class="text-muted">Blood Pressure</p>
+            <h2 id="val-bp" style="font-size:2.5rem; color:var(--color-warning); margin:0.5rem 0;">--/--</h2>
+            <p class="text-muted">mmHg</p>
+        </div>
+        <div class="card" style="padding:1.5rem; text-align:center;">
+            <p class="text-muted">Temperature</p>
+            <h2 id="val-temp" style="font-size:2.5rem; color:var(--color-success); margin:0.5rem 0;">--</h2>
+            <p class="text-muted">°C</p>
+        </div>
+    </div>
+
+    <!-- Charts -->
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem;">
+        <section class="card" style="height:350px;">
+            <div class="card-body" style="height:100%;">
+                <h3 class="card-title">Heart Rate History</h3>
+                <div style="height:250px;">
+                    <canvas id="chartHr"></canvas>
+                </div>
+            </div>
+        </section>
+        <section class="card" style="height:350px;">
+            <div class="card-body" style="height:100%;">
+                <h3 class="card-title">SpO2 History</h3>
+                <div style="height:250px;">
+                    <canvas id="chartSpo2"></canvas>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const PATIENT_ID = parseInt("{{ patient.id }}");
+    let isAbnormal = false;
+    let chartHr, chartSpo2;
+    const MAX_POINTS = 30;
+
+    // Charts Init
+    function initCharts() {
+        const commonOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: false,
+            elements: { point: { radius: 0 } },
+            scales: { x: { display: false } }
+        };
+
+        chartHr = new Chart(document.getElementById('chartHr'), {
+            type: 'line',
+            data: { labels: [], datasets: [{ label: 'Heart Rate', data: [], borderColor: '#ef4444', borderWidth: 2, tension: 0.4 }] },
+            options: { ...commonOptions, scales: { y: { min: 40, max: 180 } } }
+        });
+
+        chartSpo2 = new Chart(document.getElementById('chartSpo2'), {
+            type: 'line',
+            data: { labels: [], datasets: [{ label: 'SpO2', data: [], borderColor: '#3b82f6', borderWidth: 2, tension: 0.4 }] },
+            options: { ...commonOptions, scales: { y: { min: 80, max: 100 } } }
+        });
+    }
+
+    // Toggle Simulation
+    function toggleSimulation() {
+        fetch(`/api/vitals/${PATIENT_ID}/toggle`, { method: 'POST' })
+            .then(r => r.json())
+            .then(d => {
+                isAbnormal = d.abnormal;
+                updateButtonState();
+            });
+    }
+
+    function updateButtonState() {
+        const btn = document.getElementById('btn-simulate');
+        if (isAbnormal) {
+            btn.style.backgroundColor = 'var(--color-danger)';
+            btn.style.color = 'white';
+            btn.innerText = "Stop Emergency Simulation";
+        } else {
+            btn.style.backgroundColor = 'transparent';
+            btn.style.color = 'var(--color-danger)';
+            btn.innerText = "Simulate Emergency";
+        }
+    }
+
+    // Polling Function
+    function fetchVitals() {
+        fetch(`/api/vitals/${PATIENT_ID}`)
+            .then(r => r.json())
+            .then(data => {
+                // Update text
+                document.getElementById('val-hr').innerText = data.heart_rate;
+                document.getElementById('val-spo2').innerText = data.spo2;
+                document.getElementById('val-temp').innerText = data.temperature;
+                document.getElementById('val-bp').innerText = `${data.systolic}/${data.diastolic}`;
+
+                // Update charts
+                const now = new Date().toLocaleTimeString();
+
+                // HR
+                chartHr.data.labels.push(now);
+                chartHr.data.datasets[0].data.push(data.heart_rate);
+                if (chartHr.data.labels.length > MAX_POINTS) {
+                    chartHr.data.labels.shift();
+                    chartHr.data.datasets[0].data.shift();
+                }
+                chartHr.update();
+
+                // SpO2
+                chartSpo2.data.labels.push(now);
+                chartSpo2.data.datasets[0].data.push(data.spo2);
+                if (chartSpo2.data.labels.length > MAX_POINTS) {
+                    chartSpo2.data.labels.shift();
+                    chartSpo2.data.datasets[0].data.shift();
+                }
+                chartSpo2.update();
+
+                // Sync button state if changed elsewhere (optional, but good practice)
+                if (data.is_abnormal !== isAbnormal) {
+                    isAbnormal = data.is_abnormal;
+                    updateButtonState();
+                }
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        initCharts();
+        setInterval(fetchVitals, 1000); // 1-second update
+    });
+</script>
+{% endblock %}

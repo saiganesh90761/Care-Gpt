@@ -1,0 +1,65 @@
+{
+  "symptoms_vocab": [
+    "Abdominal Pain",
+    "Back Pain",
+    "Blurred Vision",
+    "Chest Pain",
+    "Cough",
+    "Dizziness",
+    "Fatigue",
+    "Fever",
+    "Headache",
+    "Numbness",
+    "Shortness of Breath",
+    "Sore Throat",
+    "Vomiting"
+  ],
+  "conditions_vocab": [
+    "Anemia",
+    "Asthma",
+    "Diabetes",
+    "Heart Disease",
+    "Hypertension",
+    "Kidney Disease",
+    "Thyroid Disorder"
+  ],
+  "genders": [
+    "Female",
+    "Male",
+    "Other"
+  ],
+  "classes": [
+    "Cardiology",
+    "Emergency",
+    "General Medicine",
+    "Neurology",
+    "Pulmonology"
+  ],
+  "feature_order": [
+    "age",
+    "gender_idx",
+    "blood_pressure_systolic",
+    "heart_rate",
+    "temperature_f",
+    "symptom_Abdominal Pain",
+    "symptom_Back Pain",
+    "symptom_Blurred Vision",
+    "symptom_Chest Pain",
+    "symptom_Cough",
+    "symptom_Dizziness",
+    "symptom_Fatigue",
+    "symptom_Fever",
+    "symptom_Headache",
+    "symptom_Numbness",
+    "symptom_Shortness of Breath",
+    "symptom_Sore Throat",
+    "symptom_Vomiting",
+    "condition_Anemia",
+    "condition_Asthma",
+    "condition_Diabetes",
+    "condition_Heart Disease",
+    "condition_Hypertension",
+    "condition_Kidney Disease",
+    "condition_Thyroid Disorder"
+  ]
+}

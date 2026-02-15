@@ -1,0 +1,218 @@
+{% extends "base.html" %}
+{% block title %}Symptoms Checker – HealthApp AI{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1 class="page-title">AI patient triage</h1>
+  <p class="page-desc">Enter symptoms and vitals below, or upload an EHR/EMR document to pre-fill. The AI model predicts
+    the recommended department from your input. For best results use symptoms like: Chest Pain, Shortness of Breath,
+    Headache, Fever, Cough, Dizziness, Numbness, Abdominal Pain, etc.</p>
+</div>
+
+<div class="triage-layout">
+  <div class="triage-form-area">
+    <div class="form-card">
+      <h2 class="form-title">
+        <span class="material-symbols-outlined" style="font-size:1.25rem">upload_file</span>
+        Analyze Medical Report (PDF/TXT)
+      </h2>
+      <p style="font-size:0.875rem; color:var(--color-text-muted); margin:0 0 1rem 0;">
+        Upload your medical report directly. The AI will read it and provide an instant triage result without you
+        filling the form.
+      </p>
+      <div class="upload-zone" style="flex-wrap: wrap;">
+        <!-- Hidden Input -->
+        <input type="file" id="doc-upload" accept=".pdf,.txt,.csv" aria-label="Choose health document"
+          style="display:none">
+
+        <!-- Direct Analysis -->
+        <button type="button" onclick="document.getElementById('doc-upload').click()" class="btn-primary"
+          style="background:#0f766e;">
+          <span class="material-symbols-outlined" style="font-size:1.125rem">analytics</span>
+          Analyze & Triage (Direct)
+        </button>
+
+        <!-- Pre-fill Form (Original) -->
+        <button type="button" id="btn-prefill" class="btn-upload">
+          <span class="material-symbols-outlined" style="font-size:1.125rem">edit_document</span>
+          Pre-fill Form
+        </button>
+        <input type="file" id="ehr-image-upload" accept="image/jpeg,image/png,image/webp,image/gif"
+          aria-label="Upload image of document" style="position:absolute;width:0.1px;height:0.1px;opacity:0;">
+        <button type="button" id="btn-ehr-image" class="btn-upload">
+          <span class="material-symbols-outlined" style="font-size:1.125rem">image</span>
+          Image (AI)
+        </button>
+        <span id="upload-status" class="upload-status"></span>
+      </div>
+      <div id="image-extraction-output" class="image-extraction-output hidden">
+        <h4 class="image-extraction-title">AI extraction from image</h4>
+        <pre id="image-extraction-text" class="image-extraction-text"></pre>
+        <p id="image-extraction-error" class="image-extraction-error hidden"></p>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <h2 class="form-title">Patient details &amp; symptoms</h2>
+      <form id="triage-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="age" class="form-label">Age</label>
+            <input type="number" name="age" id="age" min="1" max="120" value="35" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="gender" class="form-label">Gender</label>
+            <select name="gender" id="gender" class="form-select">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="symptoms" class="form-label">Symptoms <span style="color:var(--color-danger)">*</span></label>
+          <textarea name="symptoms" id="symptoms" rows="3" placeholder="e.g. headache, dizziness, chest pain"
+            class="form-textarea" required></textarea>
+        </div>
+        <div class="form-row form-row-3">
+          <div class="form-group">
+            <label for="blood_pressure" class="form-label">Blood pressure</label>
+            <input type="text" name="blood_pressure" id="blood_pressure" placeholder="120/80" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="heart_rate" class="form-label">Heart rate (BPM)</label>
+            <input type="number" name="heart_rate" id="heart_rate" min="30" max="250" placeholder="72"
+              class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="temperature" class="form-label">Temperature (°C)</label>
+            <input type="number" name="temperature" id="temperature" min="30" max="45" step="0.1" placeholder="36.6"
+              class="form-input">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="pre_existing_conditions" class="form-label">Pre-existing conditions</label>
+          <input type="text" name="pre_existing_conditions" id="pre_existing_conditions"
+            placeholder="e.g. hypertension, diabetes (comma-separated)" class="form-input">
+        </div>
+        <div class="form-actions">
+          <button type="submit" id="btn-submit" class="btn-primary">
+            <span class="material-symbols-outlined" style="font-size:1.25rem">medical_services</span>
+            Run AI triage
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="triage-results-area">
+    <div id="result-panel" class="result-card hidden">
+      <h3 class="result-card-title">
+        <span class="material-symbols-outlined" style="font-size:1.125rem">analytics</span>
+        Triage result
+      </h3>
+      <div id="result-content"></div>
+    </div>
+    <div id="explain-panel" class="result-card hidden">
+      <h3 class="result-card-title">
+        <span class="material-symbols-outlined" style="font-size:1.125rem">lightbulb</span>
+        Explainability
+      </h3>
+      <div id="explain-content"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const fileInput = document.getElementById('doc-upload');
+    const resultPanel = document.getElementById('result-panel');
+    const resultContent = document.getElementById('result-content');
+
+    if (fileInput) {
+      fileInput.addEventListener('change', function () {
+        if (!this.files.length) return;
+
+        const file = this.files[0];
+        const formData = new FormData();
+        formData.append('document', file);
+
+        const btn = document.querySelector('button[onclick*="doc-upload"]');
+        const originalText = btn.innerText;
+        btn.innerText = "Analyzing...";
+        btn.disabled = true;
+
+        fetch('/api/triage/document', {
+          method: 'POST',
+          body: formData
+        })
+          .then(r => r.json())
+          .then(data => {
+            btn.innerText = originalText;
+            btn.disabled = false;
+
+            if (data.error) {
+              alert("Error: " + data.error);
+              return;
+            }
+            if (data.result) {
+              renderTriageResult(data.result);
+            }
+          })
+          .catch(err => {
+            btn.innerText = originalText;
+            btn.disabled = false;
+            alert("Error: " + err);
+          });
+      });
+    }
+
+    function renderTriageResult(res) {
+      resultPanel.classList.remove('hidden');
+
+      let factorsHtml = '';
+      if (res.contributing_factors && res.contributing_factors.length) {
+        factorsHtml = '<ul style="margin-top:0.5rem; padding-left:1.2rem; font-size:0.9rem;">' +
+          res.contributing_factors.map(f => `<li><b style="text-transform:capitalize;">${f.factor}</b>: ${f.description}</li>`).join('') +
+          '</ul>';
+      }
+
+      const riskColor = res.risk_level === 'High' ? 'var(--color-danger)' :
+        res.risk_level === 'Medium' ? 'var(--color-warning)' : 'var(--color-success)';
+
+      resultContent.innerHTML = `
+            <div style="background:var(--color-bg-subtle); padding:1.5rem; border-radius:12px; border:1px solid var(--color-border);">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <h2 class="card-title" style="margin:0;">
+                        <span class="material-symbols-outlined" style="color:${riskColor}">health_and_safety</span>
+                        ${res.risk_level} Risk
+                    </h2>
+                    <span class="badge badge-medium">Confidence: ${(res.confidence_score * 100).toFixed(0)}%</span>
+                </div>
+                
+                <div style="margin-top:1rem;">
+                    <h4 style="margin:0 0 0.5rem 0; font-size:1rem; color:var(--color-text-muted);">Recommended Department</h4>
+                    <p style="font-size:1.2rem; font-weight:700; margin:0;">${res.recommended_department}</p>
+                </div>
+                
+                <div style="margin-top:1rem;">
+                     <h4 style="margin:0 0 0.5rem 0; font-size:1rem; color:var(--color-text-muted);">Assessment Summary</h4>
+                     <p style="line-height:1.6;">${res.summary}</p>
+                </div>
+                
+                ${factorsHtml ? `
+                <div style="margin-top:1rem;">
+                     <h4 style="margin:0 0 0.5rem 0; font-size:1rem; color:var(--color-text-muted);">Key Factors</h4>
+                     ${factorsHtml}
+                </div>` : ''}
+            </div>
+        `;
+
+      resultPanel.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Keep existing init if present
+    if (typeof initSymptomsPage === 'function') initSymptomsPage();
+  });
+</script>
+{% endblock %}
